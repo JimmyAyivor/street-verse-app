@@ -18,6 +18,7 @@ function App() {
   }, []);
   return (
     <div>
+        <p className="text-3xl font-bold bg-[#06202A] text-white ">Hello World</p>
       <ul>
         {days.map((day) => (
           <li key={day.name}>{day.name}</li>
