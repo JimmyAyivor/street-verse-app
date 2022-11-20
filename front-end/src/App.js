@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import { faAward, faFingerprint, faRetweet, faS, fas, faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faFingerprint, faRetweet, faS,  faUserFriends } from "@fortawesome/free-solid-svg-icons";
 
 
 import "./styles/tailwind.css";
