@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   return (
@@ -36,25 +37,25 @@ export default function Footer() {
                   className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-twitter" />
                 </button>
                 <button
                   className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-facebook-square"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-facebook" />
                 </button>
                 <button
                   className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-dribbble"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-instagram" />
                 </button>
                 <button
                   className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <i className="fab fa-github"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
                 </button>
               </div>
             </div>
@@ -68,7 +69,8 @@ export default function Footer() {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="/about" target="_self"
+                        to="/about"
+                        target="_self"
                       >
                         About Us
                       </Link>
@@ -77,12 +79,13 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/JimmyAyivor/street-verse-app?ref=sv-footer" target="_blank" rel="noreferrer"
+                        href="https://github.com/JimmyAyivor/street-verse-app?ref=sv-footer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         Github
                       </a>
                     </li>
-
                   </ul>
                 </div>
                 <div className="w-full lg:w-4/12 px-4">
@@ -90,11 +93,11 @@ export default function Footer() {
                     Other Resources
                   </span>
                   <ul className="list-unstyled">
-
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="/terms" target="_blank"
+                        to="/terms"
+                        target="_blank"
                       >
                         Terms & Conditions
                       </Link>
@@ -102,7 +105,8 @@ export default function Footer() {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="/privacy" target="_blank"
+                        to="/privacy"
+                        target="_blank"
                       >
                         Privacy Policy
                       </Link>
@@ -110,7 +114,8 @@ export default function Footer() {
                     <li>
                       <Link
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        to="/contact" target="_blank"
+                        to="/contact"
+                        target="_blank"
                       >
                         Contact Us
                       </Link>
@@ -125,7 +130,6 @@ export default function Footer() {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} StreetVerse by{" "}
-
                 <Link
                   to="https://github.com/JimmyAyivor?ref=svc-footer"
                   className="text-blueGray-500 hover:text-blueGray-800"

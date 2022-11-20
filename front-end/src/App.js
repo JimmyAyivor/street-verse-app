@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import { faAward, faFingerprint, faRetweet, faS, fas, faUserFriends } from "@fortawesome/free-solid-svg-icons";
+
+
 import "./styles/tailwind.css";
 
 //Pages
@@ -24,6 +28,8 @@ import TermsAndConditions from "./pages/terms";
 import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
+
+library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram );
 function App() {
 
 
