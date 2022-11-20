@@ -36,13 +36,13 @@ export default function Footer() {
                   className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a href="" ><i className="fab fa-twitter"></i></a>
+                  <a href="https://twitter.com/street_verse" ><i className="fab fa-twitter"></i></a>
                 </button>
                 <button
                   className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-                  <a href="" ><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://www.instagram.com/streetverseteam/" ><i class="fa-brands fa-square-instagram"></i></a>
                 </button>
                 <button
                   className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
