@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS template_test_dev;
-CREATE DATABASE template_test_dev;
+DROP DATABASE IF EXISTS street_verse_db;
+CREATE DATABASE street_verse_db;
 
-\c template_test_dev;
+\c street_verse_db;
 
 DROP TABLE IF EXISTS test;
 
