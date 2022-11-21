@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // components
 
@@ -66,7 +67,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                      <FontAwesomeIcon icon="fa-solid fa-award" />
                     </div>
                     <h6 className="text-xl font-semibold">Awarded Agency</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -81,7 +82,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                      <i className="fas fa-retweet"></i>
+                      <FontAwesomeIcon icon="fa-solid fa-retweet" />
                     </div>
                     <h6 className="text-xl font-semibold">Free Revisions</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -96,7 +97,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                      <FontAwesomeIcon icon="fa-solid fa-fingerprint" />
                     </div>
                     <h6 className="text-xl font-semibold">Verified Company</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -111,7 +112,10 @@ export default function Landing() {
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-user-friends text-xl"></i>
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-user-friends"
+                    className="text-xl"
+                  />
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Working with us is a pleasure
@@ -129,7 +133,6 @@ export default function Landing() {
                 </p>
                 <Link to="/" className="font-bold text-blueGray-700 mt-8">
                   Check StreetVerse!
-
                 </Link>
               </div>
 
@@ -227,7 +230,7 @@ export default function Landing() {
                       <div className="flex items-center">
                         <div>
                           <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3">
-                            <i className="fab fa-html5"></i>
+                            <FontAwesomeIcon icon="fa-brands fa-html5" />
                           </span>
                         </div>
                         <div>
@@ -559,7 +562,6 @@ export default function Landing() {
           </div>
         </section>
       </main>
-
     </>
   );
 }
