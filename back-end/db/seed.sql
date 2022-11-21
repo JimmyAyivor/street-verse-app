@@ -1,4 +1,4 @@
-\c template_test_dev;
+\c street_verse_db;
 
 INSERT INTO test (name) VALUES
 ('Monday'),

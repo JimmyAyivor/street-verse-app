@@ -27,9 +27,7 @@ export default function About() {
 
                                     </h1>
                                     <p className="mt-4 text-lg text-blueGray-200">
-                                        This is a simple example of a Landing Page you can build
-                                        using Notus NextJS. It features multiple CSS components
-                                        based on the Tailwind CSS design system.
+                                    StreetVerse is the world’s premier global NFT streetwear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture. Our members will have access to a world of premier releases and events, exclusive access to the latest drops, and an elite community of like-minded enthusiasts and experts - not to mention some of the most interesting designers on the planet.
                                     </p>
                                 </div>
                             </div>
