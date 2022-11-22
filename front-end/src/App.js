@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter,} from "@fortawesome/free-brands-svg-icons";
+import { faAward, faFingerprint, faRetweet, faS,  faUserFriends,faUsers,faCalendar } from "@fortawesome/free-solid-svg-icons";
 import "./styles/tailwind.css";
 
 //Pages
@@ -84,3 +86,5 @@ function LayoutsGlobalNavbar() {
     </>
   );
 }
+
+library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faUsers, faCalendar );

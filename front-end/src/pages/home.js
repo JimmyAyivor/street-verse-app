@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 // components
@@ -21,7 +21,7 @@ export default function Landing() {
                     StreetVerse 
                   </h1>
                   <p className="mt-4 text-2xl text-blueGray-200 ">
-                     The world’s premier global NFT streetwear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture.
+                     The world’s premier global NFT streetwear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture.
                   </p>
                 </div>
   </div>
@@ -79,7 +79,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                      <FontAwesomeIcon icon="fa fa-users"/>
                   </div>
                     <h6 className="text-xl font-semibold">Community</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -93,7 +93,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-                      <i className="fas fa-fingerprint"></i>
+                      <FontAwesomeIcon icon="fa fa-calendar"/>
                     </div>
                     <h6 className="text-xl font-semibold">Experiences</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -107,7 +107,7 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                      < FontAwesomeIcon icon="fas fa-fingerprint"/>
                     </div>
                     <h6 className="text-xl font-semibold">Access</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -126,20 +126,56 @@ export default function Landing() {
                       viewBox="0 0 583 95"
                       className="absolute left-0 w-full block h-95-px -top-94-px"
                     >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
+                     
                     </svg>
-                    <h1 className="text-3xl font-bold text-black">
+                    {/* <h1 className="text-3xl font-bold text-black">
                     Upcoming Events
-                    </h1>
+                    </h1> */}
                     <p className="text-md font-light mt-2 text-white">
                       
                     </p>
                   </blockquote>
           </div>
         </section>
+
+    
+         <section className="pb-20 relative block bg-Gray-900">
+          <div
+            className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+            style={{ transform: "translateZ(0)" }}
+          >
+            <svg
+              className="absolute bottom-0 overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              y="0"
+            >
+              <polygon
+                className="text-white fill-current"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
+          </div>
+
+          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+            <div className="flex flex-wrap text-center justify-center">
+              <div className="w-full lg:w-6/12 px-4">
+                <h2 className="text-4xl font-semibold text-Gray">
+                Events
+                </h2>
+                <p className="text-lg leading-relaxed mt-4 mb-4 text-Gray-900">
+                  Get a sneak peek at our  exciting members-only events, taking place all over the world! Participate in the discussions on our private Discord channels to request or suggest new events.
+                </p>
+              </div>
+            </div> 
+          </div>
+</section>
+
+
+
         <section>
             <div className="container mx-auto px-4">
             <div className="flex flex-wrap gap-2">
@@ -210,19 +246,19 @@ export default function Landing() {
                         className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <FontAwesomeIcon icon="fab fa-twitter"/>
                       </button>
                       <button
                         className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
+                        <FontAwesomeIcon icon="fab fa-facebook-f"/>
                       </button>
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-dribbble"></i>
+                        <FontAwesomeIcon icon="fab fa-dribbble"/>
                       </button>
                     </div>
                   </div>
@@ -245,13 +281,13 @@ export default function Landing() {
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                        <FontAwesomeIcon icon="fab fa-google"/>
                       </button>
                       <button
                         className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-facebook-f"></i>
+                        <FontAwesomeIcon icon="fab fa-facebook-f"/>
                       </button>
                     </div>
                   </div>
@@ -274,19 +310,19 @@ export default function Landing() {
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                        <FontAwesomeIcon icon="fab fa-google"/>
                       </button>
                       <button
                         className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <FontAwesomeIcon icon="fab fa-twitter"/>
                       </button>
                       <button
                         className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-instagram"></i>
+                        <FontAwesomeIcon icon="fab fa-instagram"/>
                       </button>
                     </div>
                   </div>
@@ -309,25 +345,25 @@ export default function Landing() {
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-dribbble"></i>
+                        <FontAwesomeIcon icon="fab fa-dribbble"/>
                       </button>
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-google"></i>
+                        <FontAwesomeIcon icon="fab fa-google"/>
                       </button>
                       <button
                         className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <FontAwesomeIcon icon="fab fa-twitter"/>
                       </button>
                       <button
                         className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-instagram"></i>
+                        <FontAwesomeIcon icon="fab fa-instagram"/>
                       </button>
                     </div>
                   </div>
@@ -372,7 +408,7 @@ export default function Landing() {
             <div className="flex flex-wrap mt-12 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-medal text-xl"></i>
+                  <FontAwesomeIcon icon="fas fa-users"/>
                 </div>
                 <h6 className="text-xl mt-5 font-semibold text-white">
                   Community
@@ -383,7 +419,7 @@ export default function Landing() {
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-poll text-xl"></i>
+                  <FontAwesomeIcon icon="fas fa-calendar"/>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
                  Experiences
@@ -394,7 +430,7 @@ export default function Landing() {
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-lightbulb text-xl"></i>
+                  <FontAwesomeIcon icon="fas fa-fingerprint"/>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
                Access
