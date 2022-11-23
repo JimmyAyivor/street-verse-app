@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter,} from "@fortawesome/free-brands-svg-icons";
-import { faAward, faFingerprint, faRetweet, faS,  faUserFriends,faUsers,faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faFingerprint, faRetweet, faS,  faUserFriends, faUsers, faCalendar, faBars } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/tailwind.css";
 
@@ -29,7 +29,8 @@ import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
 
-library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram );
+library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faBars, faUsers, faCalendar );
+
 function App() {
 
 
@@ -90,5 +91,3 @@ function LayoutsGlobalNavbar() {
     </>
   );
 }
-
-library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faUsers, faCalendar );
