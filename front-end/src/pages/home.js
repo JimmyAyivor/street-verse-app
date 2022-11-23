@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Landing() {
   return (
     <>
-      {/* <Navbar transparent /> */}
       <main>
         <div className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
