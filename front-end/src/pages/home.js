@@ -100,7 +100,7 @@ export default function Landing() {
                   <div className="px-4 py-5 flex-auto">
 
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
-<
+
                       <FontAwesomeIcon icon="fa fa-calendar" />
 
                     </div>
