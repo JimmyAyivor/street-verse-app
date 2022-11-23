@@ -2,6 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
+
+
 // components
 
 
@@ -79,9 +81,13 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+
                       <FontAwesomeIcon icon="fa fa-users" />
                     </div>
+
                     <h6 className="text-xl font-semibold">Community</h6>
+
+                 
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Become an insider everywhere. Join our invaluable community of top street wear creators, producers, enthusiasts and collectors.
                     </p>
@@ -92,8 +98,11 @@ export default function Landing() {
               <div className="pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
+
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+<
                       <FontAwesomeIcon icon="fa fa-calendar" />
+
                     </div>
                     <h6 className="text-xl font-semibold">Experiences</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -107,7 +116,9 @@ export default function Landing() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      < FontAwesomeIcon icon="fas fa-fingerprint" />
+
+                      <FontAwesomeIcon icon="fa-solid fa-fingerprint" />
+
                     </div>
                     <h6 className="text-xl font-semibold">Access</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
@@ -119,6 +130,7 @@ export default function Landing() {
             </div>
 
 
+
             <blockquote className="relative p-8 mb-4">
               <svg
                 preserveAspectRatio="none"
@@ -128,9 +140,7 @@ export default function Landing() {
               >
 
               </svg>
-              {/* <h1 className="text-3xl font-bold text-black">
-                    Upcoming Events
-                    </h1> */}
+
               <p className="text-md font-light mt-2 text-white">
 
               </p>
@@ -209,7 +219,6 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
-
 
             </div>
           </div>
@@ -512,7 +521,6 @@ export default function Landing() {
           </div>
         </section> */}
       </main>
-
     </>
   );
 }
