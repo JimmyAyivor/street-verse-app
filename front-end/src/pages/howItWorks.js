@@ -1,7 +1,8 @@
 import React from 'react'
 
 export default function HowItWorks() {
-  return (<>
+  return (
+  <>
     <div>howItWorks</div>
   </>
   )

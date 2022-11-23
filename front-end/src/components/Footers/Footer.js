@@ -37,35 +37,31 @@ export default function Footer() {
                   className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-
-
-                  <FontAwesomeIcon icon="fa-brands fa-twitter" />
-
+                  <a href="https://twitter.com/street_verse">
+                    <FontAwesomeIcon icon="fa-brands fa-twitter" />
+                  </a>
                 </button>
                 <button
                   className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-
                   <FontAwesomeIcon icon="fa-brands fa-facebook" />
-
                 </button>
                 <button
                   className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-
-                  <FontAwesomeIcon icon="fa-brands fa-instagram" />
-
+                  <a href="https://www.instagram.com/streetverseteam/">
+                    <FontAwesomeIcon icon="fa-brands fa-instagram" />
+                  </a>
                 </button>
                 <button
                   className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
                 >
-
-
-                  <FontAwesomeIcon icon="fa-brands fa-github" />
-
+                  <a href="https://github.com/JimmyAyivor/street-verse-app">
+                    <FontAwesomeIcon icon="fa-brands fa-github" />
+                  </a>
                 </button>
               </div>
             </div>
