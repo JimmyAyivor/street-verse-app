@@ -1,11 +1,9 @@
 
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
     return (
         <>
-            {/* <Navbar transparent /> */}
             <main>
                 <div className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
