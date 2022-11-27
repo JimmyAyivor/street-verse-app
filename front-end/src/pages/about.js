@@ -5,9 +5,9 @@ export default function About() {
     return (
         <>
             <main>
-                <div className="relative flex items-center justify-center h-screen mb-20
-         overflow-hidden"
-                >
+
+                <div className="relative pt-40 pb-32 flex content-center items-center justify-center min-h-screen-75">
+
                     <div
                         className="relative z-30 p-5 text-2xl text-white bg-blue-600 bg-opacity-50 rounded-xl"
                     >
