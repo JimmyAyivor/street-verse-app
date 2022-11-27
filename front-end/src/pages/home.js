@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Landing() {
   return (
     <>
-      {/* <Navbar transparent /> */}
       <main>
         <div className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
@@ -229,10 +228,10 @@ export default function Landing() {
 
         <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
+            <div className="flex flex-wrap text-center  justify-center ">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Our Community</h2>
-                <p className="text-lg leading-relaxed m-4 text-blueGray-500">
+                <h2 className="text-4xl font-semibold text-Gray">Our Community</h2>
+                <p className="text-lg leading-relaxed m-4 mb-4 text-blueGray-500">
                   A Community Built By StreetWear Fashion Lovers
                 </p>
               </div>
