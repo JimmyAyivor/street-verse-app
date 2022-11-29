@@ -18,7 +18,7 @@ export default function Navbar(props) {
               <img
                 alt="..."
                 src="/img/streetverselogo.jpg"
-                className="shadow-lg  mx-auto max-w-120-px"
+                className="border-none mx-auto max-w-120-px"
               />
             </Link>
             <button
