@@ -1,60 +1,11 @@
 import React from "react";
-import axios from "axios";
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
 
-const API = process.env.REACT_APP_API_URL;
-
-export default function CardSettings() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-
-  const [user, setUser] = useState({
-    username: "",
-    email: "",
-    firstName: "",
-    lastName: "",
-    address: "",
-    city: "",
-    country: "",
-    postalCode: "",
-    occupation: "",
-    bio: "",
-  });
-
-  useEffect(() => {
-    axios
-      .get(`${API}/users/${id}`)
-      .then((res) => setUser(res.data.payload))
-      .catch((err) => console.log(err));
-  }, [id]);
-
-  const updateUser = (updatedUser) => {
-    axios
-      .put(`${API}/users/${id}`, updatedUser)
-      .then(() => {
-        navigate("/admin/settings");
-      })
-      .catch((err) => console.log(err));
-  };
-
-  const handleTextChange = (e) => {
-    setUser({ ...user, [e.target.id]: e.target.value });
-  };
-
-  const handleZipChange = (e) => {
-    setUser({
-      ...user,
-      [e.target.id]: e.target.value.replace(/[^\d{5}]$/, "").substr(0, 5),
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    updateUser(user);
-    console.log(user);
-  };
-
+export default function CardSettings({
+  user,
+  handleSubmit,
+  handleTextChange,
+  handleZipChange,
+}) {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
@@ -236,6 +187,24 @@ export default function CardSettings() {
               About Me
             </h6>
             <div className="flex flex-wrap">
+              <div className="w-full lg:w-12/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
+                    Occupation
+                  </label>
+                  <input
+                    type="text"
+                    id="occupation"
+                    value={user.occupation}
+                    onChange={handleTextChange}
+                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    placeholder="Solution Manager - At Example"
+                  />
+                </div>
+              </div>
               <div className="w-full lg:w-12/12 px-4">
                 <div className="relative w-full mb-3">
                   <label
