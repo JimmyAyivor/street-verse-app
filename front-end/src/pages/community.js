@@ -1,28 +1,26 @@
-import React from 'react'
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Commuiniy() {
   return (
-   <>
-      {/* <Navbar transparent /> */}
+    <>
       <main>
-        <div className="relative flex items-center justify-center h-screen mb-20
+        <div
+          className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
         >
-          <div
-            className="relative z-30 p-5 text-2xl text-white bg-blue-600 bg-opacity-50 rounded-xl"
-          >
-            
-            <div className="pr-12">
-              <h1 className="text-white font-semibold text-6xl justfy-center object-center text-center ">
+          <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 text-white bg-gray-900 bg-opacity-50 rounded-xl">
+            <div className="">
+              <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
                 Community
               </h1>
-              <p className="mt-4 text-2xl text-blueGray-200 ">
-                Become an insider everywhere. Join our invaluable community of top street wear creators, producers, enthusiasts and collectors.
+              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center ">
+                Become an insider everywhere. Join our invaluable community of
+                top street wear creators, producers, enthusiasts and collectors.
               </p>
             </div>
           </div>
-          
+
           <video
             autoPlay
             loop
@@ -33,22 +31,13 @@ export default function Commuiniy() {
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
-            <source
-              src="/img/communit1.mp4"
-              type="video/mp4"
-              
-            />
+            <source src="/img/communit1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-         
-           
-
           </video>
         </div>
         <div className="container relative mx-auto">
           <div className="items-center flex flex-wrap">
-            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-
-            </div>
+            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center"></div>
           </div>
         </div>
         <div
@@ -70,11 +59,11 @@ export default function Commuiniy() {
             ></polygon>
           </svg>
         </div>
-         <section className="pt-20 pb-48">
+        <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Our Community</h2>
+                <h2 className="text-5xl font-semibold">Our Community</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
                   A Community Built By StreetWear Fashion Lovers
                 </p>
@@ -82,7 +71,7 @@ export default function Commuiniy() {
             </div>
             <div className="flex flex-wrap">
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
+                <div className="px-6 mb-8">
                   <img
                     alt="..."
                     src="/img/community1.jpg"
@@ -93,7 +82,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Designer
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -128,7 +117,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Stylist
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -157,7 +146,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Stylist
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -186,7 +175,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Model
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -208,14 +197,14 @@ export default function Commuiniy() {
                   <img
                     alt="..."
                     src="/img/comm2.jpg"
-                    className="shadow-lg rounded-full mx-auto max-w-120-px"
+                    className="shadow-lg mx-auto max-w-120-px rounded-full"
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Amy True</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Stylist
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -244,7 +233,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Stylist
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -273,7 +262,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       NFT Expert
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -308,7 +297,7 @@ export default function Commuiniy() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Founder and CEO
                     </p>
-                    <div className="mt-6">
+                    <div className="mt-3">
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -336,12 +325,11 @@ export default function Commuiniy() {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
         </section>
       </main>
-      </>
-  )
+    </>
+  );
 }
