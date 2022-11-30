@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function HowItWorks() {
   return (
@@ -64,8 +65,8 @@ export default function HowItWorks() {
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                      <i className="fas fa-award"></i>
+                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                      <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
                     </div>
                     <h6 className="text-xl font-semibold">Benefits</h6>
                   </div>
@@ -75,8 +76,8 @@ export default function HowItWorks() {
               <div className="w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
-                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                      <i className="fas fa-retweet"></i>
+                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                      <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />
                     </div>
                     <h6 className="text-xl font-semibold">What are NTFs</h6>
                   </div>
@@ -87,9 +88,9 @@ export default function HowItWorks() {
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
-                      <i className="fas fa-fingerprint"></i>
+                      <FontAwesomeIcon icon="fa-solid fa-phone" />
                     </div>
-                    <p> Should you have any questions you can reach us here:</p>
+                    <p className="text-xl font-semibold"> Should you have any questions you can reach us here:</p>
                     <a
                       href="/contact"
                       class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
@@ -100,11 +101,21 @@ export default function HowItWorks() {
                 </div>
               </div>
             </div>
-
+ <div className="w-full md:w-8/12 px-4 mr-auto ml-auto">
+                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-20 shadow-lg rounded-lg bg-blueGray-700">
+                  <div class="bg-cover bg-center ...">
+                    <img
+                      alt="..."
+                      className="max-w-full w-auto rounded-lg shadow-lg opacity-80"
+                      src="https://cdn.cliqueinc.com/posts/301747/copenhagen-fashion-week-street-style-spring-summer-2023-301747-1660167146432-main.900x0c.jpg?interlace=true&quality=70"
+                    />
+                  </div>
+                </div>
+              </div>
             <div className="flex flex-wrap items-center mt-32">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
-                  <i className="fas fa-user-friends text-xl"></i>
+                <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
                 </div>
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
                   Benefits
@@ -126,36 +137,7 @@ export default function HowItWorks() {
                 </p>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Top Notch Services
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      The Arctic Ocean freezes every winter and much of the
-                      sea-ice then thaws every summer, and that process will
-                      continue whatever happens.
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
+             
             </div>
           </div>
         </section>
@@ -183,31 +165,37 @@ export default function HowItWorks() {
 
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
-              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                />
-              </div>
+              
+              <div class="bg-cover bg-center ...">
+              <span id="blackOverlay" className="w-full h-full blur-sm opacity-40 bg-black"> 
+              <img alt="..."
+                  className="max-w-full w-auto rounded-lg shadow-lg"
+                  src="https://d1e00ek4ebabms.cloudfront.net/production/8b88f4e2-2cf9-4088-96d7-f97b007abf79.jpg?source=next&fit=scale-down&quality=highest&width=1067&dpr=1"/> 
+              </span>
+             </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
-                    <i className="fas fa-rocket text-xl"></i>
+                  <br></br>
+
+                  <div class="absolute text-4xl top-1/2 left-1/2
+                   -translate-x-1/2 -translate-y-1/2">
+                    <div className="text-white p-3 text-center inline-flex items-center justify-center w-15 h-15 mb-5 shadow-lg rounded-full bg-red-400">
+                      <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />
+                    </div>
+                    <h3 className="text-4xl text-blueGray-800 font-semibold">What are NTFs</h3>
+                    <p className="mt-10 text-2xl text-blueGray-800 leading-relaxed font-semibold">
+                      Non-fungible tokens (NFTs) are cryptographic assets on a
+                      blockchain with unique identification codes and metadata
+                      that distinguish them from each other.
+                    </p>
+                    <p className="mt-8 text-2xl  text-blueGray-800 leading-relaxed font-semibold">
+                      As a StreetVerse member, you’ll have the keys to unlock a
+                      world of beautifully unique streetwear, exclusive offers on
+                      rare items, and an entire community of like-minded
+                      enthusiasts - not to mention some of the most interesting
+                      designers on the planet.
+                    </p>
                   </div>
-                  <h3 className="text-3xl font-semibold">What are NTFs</h3>
-                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    Non-fungible tokens (NFTs) are cryptographic assets on a
-                    blockchain with unique identification codes and metadata
-                    that distinguish them from each other.
-                  </p>
-                  <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                    As a StreetVerse member, you’ll have the keys to unlock a
-                    world of beautifully unique streetwear, exclusive offers on
-                    rare items, and an entire community of like-minded
-                    enthusiasts - not to mention some of the most interesting
-                    designers on the planet.
-                  </p>
                 </div>
               </div>
             </div>
