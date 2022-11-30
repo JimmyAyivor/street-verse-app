@@ -4,7 +4,7 @@ export default function Faq() {
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100 mt-[80px] mb-[10px]">
       <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-        <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
+        <h2 className="mb-12 text-4xl pt-[60px] font-bold leading-none text-center sm:text-5xl">
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
@@ -118,8 +118,8 @@ export default function Faq() {
               </p>
               <p>
                 StreetVerse is compatible with most major Web3 wallets including
-                Metamask and Torus. If you don’t have a wallet yet, you can sign
-                up for one through the ----------. This wallet will be linked to
+                Metamask. If you don’t have a wallet yet, you can sign
+                up for one through the Metamask website. This wallet will be linked to
                 the email or social profile you connect it with, and you’ll be
                 able to use it anywhere in Web3 in the future. If you need help
                 getting set up we are happy to assist you through your
