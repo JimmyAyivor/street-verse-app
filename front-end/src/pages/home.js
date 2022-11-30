@@ -9,6 +9,7 @@ export default function Landing() {
           className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
         >
+
           <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 relative z-30 p-5 text-white  rounded-xl">
             <div className="relative">
               <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
@@ -17,6 +18,7 @@ export default function Landing() {
               <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
                 The world’s premier global NFT streetwear club. We are a
                 community built by fashion lovers, founded to celebrate the
+
                 authenticity and diversity of streetwear culture.
               </p>
             </div>
@@ -29,6 +31,12 @@ export default function Landing() {
           >
             <source src="/img/streetv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
+
+            <span
+              id="blackOverlay"
+              className="w-full h-full absolute opacity-75 bg-black"
+            ></span>
+
           </video>
         </div>
         <div className="container relative mx-auto">
@@ -218,7 +226,9 @@ export default function Landing() {
           </div>
         </section>
 
+
         <section className="pt-20 pb-8 md:pb-48">
+
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap text-center  justify-center ">
               <div className="w-full lg:w-6/12 px-4">
