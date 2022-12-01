@@ -65,7 +65,9 @@ export default function Commuiniy() {
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-5xl font-semibold">Our Community</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  A Community Built By StreetWear Fashion Lovers
+                  A Community Built By StreetWear Fashion Lovers 
+                  <div></div>
+                  Together, We Are Curious, Generous, Inclusive
                 </p>
               </div>
             </div>
@@ -74,11 +76,11 @@ export default function Commuiniy() {
                 <div className="px-6 mb-8">
                   <img
                     alt="..."
-                    src="/img/community1.jpg"
+                    src="https://images.unsplash.com/photo-1532332248682-206cc786359f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80&w=800&h=800"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Virgil Abloh</h5>
+                    <h5 className="text-xl font-bold">Kazi Mizan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Designer
                     </p>
@@ -138,11 +140,11 @@ export default function Commuiniy() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/comm4.jpg"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80&h=800&w=800"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Renita Williams</h5>
+                    <h5 className="text-xl font-bold">Aioni Haust</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Stylist
                     </p>
@@ -167,7 +169,7 @@ export default function Commuiniy() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/comm3.jpg"
+                    src="https://images.unsplash.com/photo-1624223237138-21a37e61dec0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80&h=800&w=800"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
@@ -196,8 +198,8 @@ export default function Commuiniy() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/comm2.jpg"
-                    className="shadow-lg mx-auto max-w-120-px rounded-full"
+                    src="https://images.unsplash.com/photo-1585185590319-d68abacc7848?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80&w=800&h=800"
+                    className="shadow-lg mx-auto max-w-120-px object-cover rounded-full"
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Amy True</h5>

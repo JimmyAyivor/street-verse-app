@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from 'react-router-dom'
 
 export default function Landing() {
   return (
@@ -9,7 +10,6 @@ export default function Landing() {
           className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
         >
-
           <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 relative z-30 p-5 text-white  rounded-xl">
             <div className="relative">
               <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
@@ -18,7 +18,6 @@ export default function Landing() {
               <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
                 The world’s premier global NFT streetwear club. We are a
                 community built by fashion lovers, founded to celebrate the
-
                 authenticity and diversity of streetwear culture.
               </p>
             </div>
@@ -31,12 +30,10 @@ export default function Landing() {
           >
             <source src="/img/streetv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
-
             <span
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
-
           </video>
         </div>
         <div className="container relative mx-auto">
@@ -170,7 +167,7 @@ export default function Landing() {
             <div className="flex flex-wrap place-content-evenly gap-4">
               <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                 <img
-                  src="img/runway3.jpeg"
+                  src="https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
                   alt=""
                   className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
                 />
@@ -188,9 +185,9 @@ export default function Landing() {
               </div>
               <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                 <img
-                  src="img/freedom-tower1.jpeg"
+                  src="https://images.unsplash.com/photo-1587088155172-e9355df99c30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=705&q=80"
                   alt=""
-                  className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
+                  className="object-cover object-top w-full rounded-t-md h-72 dark:bg-gray-500"
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                   <div className="space-y-2">
@@ -206,7 +203,7 @@ export default function Landing() {
               </div>
               <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                 <img
-                  src="img/parisfashion.jpeg"
+                  src="https://images.unsplash.com/photo-1605289355680-75fb41239154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                   alt=""
                   className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
                 />
@@ -224,11 +221,16 @@ export default function Landing() {
               </div>
             </div>
           </div>
+          <div className="flex flex-col justify-center items-center ">
+            <Link to={'/events'}>
+              <button className="dark:bg-gray-900 rounded-md dark:text-gray-100 mx-auto mt-7 p-3 inline-block text-lg ">
+                View All Events
+              </button>
+            </Link>
+          </div>
         </section>
 
-
         <section className="pt-20 pb-8 md:pb-48">
-
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap text-center  justify-center ">
               <div className="w-full lg:w-6/12 px-4">
@@ -245,11 +247,11 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="/img/community1.jpg"
+                    src="https://images.unsplash.com/photo-1532332248682-206cc786359f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80&w=800&h=800"
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Virgil Abloh</h5>
+                    <h5 className="text-xl font-bold">Kazi Mizan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Designer
                     </p>
