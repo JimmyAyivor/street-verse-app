@@ -1,11 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
 
+import { Link , useNavigate} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import {auth,registerWithEmailAndPassword,signInWithGoogle,} from "../firebase.js" 
 // layout for page
 
 import Auth from "../../layouts/Auth";
 
 export default function Register() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate();
+  const register = () => {
+    if (!name) alert("Please enter name");
+    registerWithEmailAndPassword(name, email, password);
+  };
+  useEffect(() => {
+    if (loading) return;
+    if (user) navigate("/dashboard", {replace: true});
+  }, [user, loading, error, navigate]);
+
+
   return (
     <>
       <Auth>
@@ -30,6 +47,7 @@ export default function Register() {
                     <button
                       className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                       type="button"
+                      onClick={signInWithGoogle}
                     >
                       <img alt="..." className="w-5 mr-1" src="/img/google.svg" />
                       Google
@@ -50,9 +68,11 @@ export default function Register() {
                         Name
                       </label>
                       <input
-                        type="email"
+                        type="text"
+                        value={name}
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        placeholder="Name"
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder=" Full Name"
                       />
                     </div>
 
@@ -64,8 +84,10 @@ export default function Register() {
                         Email
                       </label>
                       <input
-                        type="email"
+                        type="text"
+                        value={email}
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        onChange={(e) => setEmail(e.target.value)}
                         placeholder="Email"
                       />
                     </div>
@@ -79,7 +101,9 @@ export default function Register() {
                       </label>
                       <input
                         type="password"
+                        value={password}
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        onChange={(e) => setPassword(e.target.value)}
                         placeholder="Password"
                       />
                     </div>
@@ -107,6 +131,7 @@ export default function Register() {
                       <button
                         className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                         type="button"
+                        onClick={register}
                       >
                         Create Account
                       </button>

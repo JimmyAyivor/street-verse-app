@@ -28,6 +28,8 @@ import TermsAndConditions from "./pages/terms";
 import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
+import Reset from "./pages/auth/reset"
+
 
 library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faBars, faUsers, faCalendar, faBriefcase, faMapMarkerAlt, faPhone, faCircleNodes, faCirclePlus);
 
@@ -51,6 +53,7 @@ function App() {
               <Route path='/terms' element={<TermsAndConditions />} />
               <Route path='/privacy' element={<Privacy />} />
               <Route path='/contact' element={<ContactUs />} />
+            
             </Route>
 
             <Route path="/" element={<LayoutsAdminNavbar />}>
@@ -61,6 +64,7 @@ function App() {
 
             <Route path='/auth/login' element={<Login />} />
             <Route path='/auth/register' element={<Register />} />
+            <Route path='/auth/reset' element={<Reset />} />
             <Route path='/profile' element={<Profile />} />
 
             <Route path='*' element={<FourOFour />} />
