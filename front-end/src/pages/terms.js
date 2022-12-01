@@ -190,10 +190,10 @@ export default function Terms() {
         <li>(d) any other aspect of your relationship or transactions with StreetVerse, directly or indirectly, as a consumer (“Claim” or collectively, “Claims”). The Arbitration Agreement shall apply, without limitation, to all Claims that arose or were asserted before or after your agreement to these Terms.</li>
       </p>
       <br></br>
-      <p>You can reject and opt-out of this Arbitration Agreement within 30 days of accepting these Terms by emailing StreetVerse us on our <a href="/contact" class="text-blue-600 hover:text-blue-700 underlinetransition duration-300 ease-in-out mb-4">
+      <p>You can reject and opt-out of this Arbitration Agreement within 30 days of accepting these Terms by emailing StreetVerse us on our <a href="/contact" class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4">
 Contact Page</a> with your first and last name and stating your intent to opt-out of the Arbitration Agreement. Note that opting out of this Arbitration Agreement does not affect any other part of this Agreement, including the provisions regarding controlling law or in which courts any disputes must be brought.</p>
       <br></br>
-      <p>For any Claim, you agree to first contact us on our <a href="/contact" class="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4">
+      <p>For any Claim, you agree to first contact us on our <a href="/contact" class="text-blue-600 underline hover:text-blue-700 transition duration-300 ease-in-out mb-4">
 Contact Page</a> and attempt to resolve the dispute with us informally. In the unlikely event that StreetVerse has not been able to resolve a Claim after sixty (60) days, we each agree to resolve any Claim exclusively through binding arbitration by AAA before a single arbitrator (the “Arbitrator”), under the Expedited Procedures then in effect for AAA (the “Rules”), except as provided herein. In the event of any conflict between the Rules and this Arbitration Agreement, this Arbitration Agreement shall control. AAA may be contacted at www.adr.org, where the Rules are also available. The arbitration will be conducted in the U.S. county where you live or New York, unless you and StreetVerse agree otherwise. If you are using the Service for commercial purposes, each party will be responsible for paying any AAA filing, administrative and arbitrator fees in accordance with AAA rules, and the award rendered by the arbitrator shall include costs of arbitration, reasonable attorneys fees and reasonable costs for expert and other witnesses. If you are an individual using the Service for non-commercial purposes:
         <li>(i) AAA may require you to pay a fee for the initiation of your case, unless you apply for and successfully obtain a fee waiver from AAA; </li>
         <li>(ii) the award rendered by the arbitrator may include your costs of arbitration, your reasonable attorneys fees, and your reasonable costs for expert and other witnesses; and </li>
@@ -211,8 +211,8 @@ Contact Page</a> and attempt to resolve the dispute with us informally. In the u
       <p>Any new features or tools which are added to the current store shall also be subject to these Terms. You can review the most current version of the Terms of Service at any time at this page. We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.</p>
       <br></br>
       <h2 class="text-left text-blueGray-700 underline font-bold text-xl ... ">SECTION 23 - CONTACT INFORMATION</h2>
-      <p>For questions about the Terms of Service please reach out to us here <a href="/contact" class="text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out mb-4">
-Contact</a></p>
+      <p>For questions about the Terms of Service please reach out to us here <a href="/contact" class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4">
+Contact Page</a></p>
       <br></br>
       <h2 class="text-left text-blueGray-700 underline font-bold text-xl ... ">SECTION 24 - NO WAIVER</h2>
       <p>Our failure to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision. </p>
