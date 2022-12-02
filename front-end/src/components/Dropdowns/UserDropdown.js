@@ -1,5 +1,6 @@
 import React from "react";
 import { createPopper } from "@popperjs/core";
+import { Link } from "react-router-dom";
 
 const UserDropdown = () => {
   // dropdown props
@@ -17,9 +18,9 @@ const UserDropdown = () => {
   };
   return (
     <>
-      <a
+      <Link
         className="text-blueGray-500 block"
-        href="#pablo"
+        to="/profile"
         ref={btnDropdownRef}
         onClick={(e) => {
           e.preventDefault();
@@ -35,7 +36,7 @@ const UserDropdown = () => {
             />
           </span>
         </div>
-      </a>
+      </Link>
       <div
         ref={popoverDropdownRef}
         className={
@@ -43,43 +44,40 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <a
-          href="#pablo"
+        <Link
+          to="/profile"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-          onClick={(e) => e.preventDefault()}
         >
-          Action
-        </a>
-        <a
-          href="#pablo"
+          Profile
+        </Link>
+        <Link
+          to="/admin/settings"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-          onClick={(e) => e.preventDefault()}
         >
-          Another action
-        </a>
-        <a
-          href="#pablo"
+          Settings
+        </Link>
+        <Link
+          to="/admin/messages"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-          onClick={(e) => e.preventDefault()}
         >
-          Something else here
-        </a>
+          Messages
+        </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
-        <a
-          href="#pablo"
+        <Link
+          to="#pablo"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
           onClick={(e) => e.preventDefault()}
         >
-          Seprated link
-        </a>
+          LogOut
+        </Link>
       </div>
     </>
   );

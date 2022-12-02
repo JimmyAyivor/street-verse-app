@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function CardStats({
   statSubtitle,
   statTitle,
@@ -31,21 +31,20 @@ export default function CardStats({
                   statIconColor
                 }
               >
-                <i className={statIconName}></i>
+                <FontAwesomeIcon  icon={statIconName}/>
               </div>
             </div>
           </div>
           <p className="text-sm text-blueGray-400 mt-4">
             <span className={statPercentColor + " mr-2"}>
-              <i
-                className={
+            <FontAwesomeIcon  icon={
                   statArrow === "up"
                     ? "fas fa-arrow-up"
                     : statArrow === "down"
                     ? "fas fa-arrow-down"
                     : ""
                 }
-              ></i>{" "}
+              />{" "}
               {statPercent}%
             </span>
             <span className="whitespace-nowrap">{statDescripiron}</span>

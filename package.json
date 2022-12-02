@@ -1,5 +1,5 @@
 {
-  "name": "pern-final-project",
+  "name": "street-verse-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joinpursuit/pern-final-project.git"
+    "url": "git+https://github.com/JimmyAyivor/street-verse-app.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/joinpursuit/pern-final-project/issues"
+    "url": "https://github.com/JimmyAyivor/street-verse-app/issues"
   },
-  "homepage": "https://github.com/joinpursuit/pern-final-project#readme"
+  "homepage": "https://github.com/JimmyAyivor/street-verse-app#readme"
   
 }
