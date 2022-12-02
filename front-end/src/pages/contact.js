@@ -25,9 +25,7 @@ export default function Contact() {
                                     Contact us.
                                 </h1>
                                 <p className="mt-4 text-lg text-blueGray-200">
-                                    This is a simple example of a Landing Page you can build
-                                    using Notus NextJS. It features multiple CSS components
-                                    based on the Tailwind CSS design system.
+                                    Please reach out with any questions you may have.  We are available Monday - Friday, 9am - 5pm.  If you do reach out during off hours, then someone will respond to your message the next business day.
                                 </p>
                             </div>
                         </div>
@@ -79,12 +77,10 @@ export default function Contact() {
                     <div className="flex flex-wrap text-center justify-center">
                         <div className="w-full lg:w-6/12 px-4">
                             <h2 className="text-4xl font-semibold text-white">
-                                Build something
+                                Meet The Team!
                             </h2>
                             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
-                                Put the potentially record low maximum sea ice extent tihs
-                                year down to low ice. According to the National Oceanic and
-                                Atmospheric Administration, Ted, Scambos.
+                                Meet the people who started this wonderful site!  
                             </p>
                         </div>
                     </div>
@@ -94,7 +90,7 @@ export default function Contact() {
                                 <i className="fas fa-medal text-xl"></i>
                             </div>
                             <h6 className="text-xl mt-5 font-semibold text-white">
-                                Excelent Services
+                                Jimmy Ayivor
                             </h6>
                             <p className="mt-2 mb-4 text-blueGray-400">
                                 Some quick example text to build on the card title and make up
@@ -106,7 +102,7 @@ export default function Contact() {
                                 <i className="fas fa-poll text-xl"></i>
                             </div>
                             <h5 className="text-xl mt-5 font-semibold text-white">
-                                Grow your market
+                                Christine Taylor
                             </h5>
                             <p className="mt-2 mb-4 text-blueGray-400">
                                 Some quick example text to build on the card title and make up
@@ -118,7 +114,31 @@ export default function Contact() {
                                 <i className="fas fa-lightbulb text-xl"></i>
                             </div>
                             <h5 className="text-xl mt-5 font-semibold text-white">
-                                Launch time
+                                Jorge Carrera
+                            </h5>
+                            <p className="mt-2 mb-4 text-blueGray-400">
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div className="w-full lg:w-3/12 px-4 text-center">
+                            <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i className="fas fa-lightbulb text-xl"></i>
+                            </div>
+                            <h5 className="text-xl mt-5 font-semibold text-white">
+                                Tajnique "T.K." Fuller
+                            </h5>
+                            <p className="mt-2 mb-4 text-blueGray-400">
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div className="w-full lg:w-3/12 px-4 text-center">
+                            <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                                <i className="fas fa-lightbulb text-xl"></i>
+                            </div>
+                            <h5 className="text-xl mt-5 font-semibold text-white">
+                                Dan Morales
                             </h5>
                             <p className="mt-2 mb-4 text-blueGray-400">
                                 Some quick example text to build on the card title and make up
