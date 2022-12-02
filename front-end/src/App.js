@@ -1,4 +1,6 @@
 import axios from "axios";
+import Navbar from "components/Navbars/AuthNavbar.js";
+
 import { useState, useEffect } from "react";
 const API = process.env.REACT_APP_API_URL;
 
@@ -17,12 +19,15 @@ function App() {
       .catch((c) => console.warn("catch", c));
   }, []);
   return (
-    <div>
+    <div><>
+          <Navbar transparent />
+
       <ul>
         {days.map((day) => (
           <li key={day.name}>{day.name}</li>
         ))}
       </ul>
+    </>
     </div>
   );
 }
