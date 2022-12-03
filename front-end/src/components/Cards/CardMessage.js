@@ -1,5 +1,4 @@
 import React from 'react'
-import MessageTableDropdown from "../Dropdowns/MessageTableDropdown.js";
 import Modal from '../Modals/MessageModal.js';
 
 function CardMessage({ Message, openModal }) {

@@ -1,7 +1,5 @@
 import React from "react";
-import { createPopper } from "@popperjs/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+
 
 const NotificationDropdown = ({openModal}) => {
 

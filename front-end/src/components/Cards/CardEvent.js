@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import Modal from "../Modals/EventModal.js";
 // components
-const API = process.env.REACT_APP_API_URL;
 
 export default function CardMessages({Event,openModal}) {
 

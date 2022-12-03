@@ -1,7 +1,7 @@
 import {  Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown, faArrowUp, faAward, faCalendar, faCalendarCheck, faCalendarPlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faRetweet, faS,  faSearch,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faCalendarCheck, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faRetweet, faS,  faSearch,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 
 import "./styles/tailwind.css";
