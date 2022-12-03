@@ -1,5 +1,5 @@
 # StreetVerse
-[StreetVerse](https://www.google.com) is the world’s premier global NFT streetwear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture.
+[StreetVerse](https://www.streetverse.club) is the world’s premier global NFT street-wear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of street-wear culture.
 
 # Technologies
 

@@ -12,8 +12,9 @@ begin
 end;
 $$;
 create table if not exists users (
-  id uuid primary key not null default gen_random_uuid(),
+  id    serial primary key,
   "uid"      text unique,
+  wallet_id  char(42) unique not null,
   username   text unique,
   firstname  text not null,
   lastname   text not null,
@@ -43,7 +44,7 @@ create table if not exists users (
 create trigger updated_at before update on users for each row execute procedure set_updated_at();
 
 create table if not exists memberships (
-  id uuid primary key not null default gen_random_uuid(),
+  id     serial primary key,
   teir   text not null,
   price  int not null
 );
@@ -51,7 +52,7 @@ create table if not exists memberships (
 
 
 create table if not exists events (
-  id uuid primary key not null default gen_random_uuid(),
+  id    serial primary key,
   title text not null,
   short_desc text not null,
   thumbnail text not null,
@@ -59,16 +60,16 @@ create table if not exists events (
   long_desc text not null,
   "date"     date not null,
   "location" text not null,
-  membership uuid not null references memberships(id) on delete cascade,
+  membership int not null references memberships(id) on delete cascade,
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
 );
 
 create table if not exists messages (
-  id uuid primary key not null default gen_random_uuid(),
-  fullname  text not null,
-  email      text not null,
+  id          serial primary key,
+  fullname    text not null,
+  email       text not null,
   "message"   text not null,
-  created_at timestamp not null default now(),
-  updated_at timestamp not null default now()
+  created_at  timestamp not null default now(),
+  updated_at  timestamp not null default now()
 );
