@@ -6,6 +6,8 @@ import App from './App';
 import ScrollButton from './components/BackToTop/ScrollButton';
 
 
+
+
 ReactDOM.render(
   <BrowserRouter>
       {/* <AuthProvider> */}
@@ -17,3 +19,4 @@ ReactDOM.render(
     </BrowserRouter>,
   document.getElementById('root')
 );
+

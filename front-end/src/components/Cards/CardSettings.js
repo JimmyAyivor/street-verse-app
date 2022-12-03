@@ -1,8 +1,11 @@
 import React from "react";
 
-// components
-
-export default function CardSettings() {
+export default function CardSettings({
+  user,
+  handleSubmit,
+  handleTextChange,
+  handleZipChange,
+}) {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
@@ -10,15 +13,16 @@ export default function CardSettings() {
           <div className="text-center flex justify-between">
             <h6 className="text-blueGray-700 text-xl font-bold">My account</h6>
             <button
+              onClick={handleSubmit}
               className="bg-blueGray-700 active:bg-blueGray-600 text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
               type="button"
             >
-              Settings
+              Update
             </button>
           </div>
         </div>
         <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-          <form>
+          <form noValidate="">
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
               User Information
             </h6>
@@ -32,9 +36,12 @@ export default function CardSettings() {
                     Username
                   </label>
                   <input
+                    id="username"
+                    value={user.username}
                     type="text"
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="lucky.jesse"
+                    onChange={handleTextChange}
+                    placeholder="username"
                   />
                 </div>
               </div>
@@ -48,8 +55,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="email"
+                    id="email"
+                    value={user.email}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="jesse@example.com"
+                    placeholder="email@example.com"
                   />
                 </div>
               </div>
@@ -63,8 +73,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="text"
+                    id="firstName"
+                    value={user.firstName}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="Lucky"
+                    placeholder="First Name"
                   />
                 </div>
               </div>
@@ -78,8 +91,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="text"
+                    id="lastName"
+                    value={user.lastName}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="Jesse"
+                    placeholder="Last Name"
                   />
                 </div>
               </div>
@@ -101,8 +117,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="text"
+                    id="address"
+                    value={user.address}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                    placeholder="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                   />
                 </div>
               </div>
@@ -115,9 +134,12 @@ export default function CardSettings() {
                     City
                   </label>
                   <input
-                    type="email"
+                    type="text"
+                    id="city"
+                    value={user.city}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="New York"
+                    placeholder="New York"
                   />
                 </div>
               </div>
@@ -131,8 +153,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="text"
+                    id="country"
+                    value={user.country}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="United States"
+                    placeholder="United States"
                   />
                 </div>
               </div>
@@ -146,8 +171,11 @@ export default function CardSettings() {
                   </label>
                   <input
                     type="text"
+                    id="postalCode"
+                    value={user.postalCode}
+                    onChange={handleZipChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                    defaultValue="Postal Code"
+                    placeholder="Postal Code"
                   />
                 </div>
               </div>
@@ -165,14 +193,34 @@ export default function CardSettings() {
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
+                    Occupation
+                  </label>
+                  <input
+                    type="text"
+                    id="occupation"
+                    value={user.occupation}
+                    onChange={handleTextChange}
+                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    placeholder="Solution Manager - At Example"
+                  />
+                </div>
+              </div>
+              <div className="w-full lg:w-12/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
                     About me
                   </label>
                   <textarea
                     type="text"
+                    id="bio"
+                    value={user.bio}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     rows="4"
-                    defaultValue="A beautiful UI Kit and Admin for NextJS & Tailwind CSS. It is Free
-                    and Open Source."
+                    placeholder="Bio....."
                   ></textarea>
                 </div>
               </div>

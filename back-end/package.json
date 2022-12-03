@@ -19,6 +19,6 @@
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
     "pg-promise": "^10.11.1",
-    "react-scripts": "5.0.0"
+    "react-scripts": "^5.0.1"
   }
 }
