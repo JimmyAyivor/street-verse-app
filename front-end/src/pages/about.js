@@ -11,7 +11,7 @@ export default function About() {
                         className="relative z-30 p-5 text-2xl text-white bg-blue-600 bg-opacity-50 rounded-xl"
                     >
 
-                        <div className="pr-12">
+                        <div className="py-60">
                             <h1 className="text-white font-semibold text-6xl justfy-center object-center text-center ">
                                 About Us
                             </h1>
@@ -52,10 +52,7 @@ export default function About() {
                         x="0"
                         y="0"
                     >
-                        <polygon
-                            className="text-blueGray-200 fill-current"
-                            points="2560 0 2560 100 0 100"
-                        ></polygon>
+                      
                     </svg>
                 </div>
                 <section className="pt-20 pb-48">
