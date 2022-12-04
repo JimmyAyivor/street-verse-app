@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 // components
 
-import TableDropdown from "../Dropdowns/TableDropdown.js";
+import TableDropdown from "../Menus/TableDropdown.js";
 
-export default function CardTable({ color , title}) {
+export default function CardTable({ color, title }) {
   return (
     <>
       <div

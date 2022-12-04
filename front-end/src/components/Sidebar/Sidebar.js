@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import NotificationDropdown from "../Dropdowns/NotificationDropdown.js";
-import UserDropdown from "../Dropdowns/UserDropdown.js";
+import NotificationDropdown from "../Menus/NotificationDropdown.js";
+import UserDropdown from "../Menus/UserDropdown.js";
 export default function Sidebar() {
   const [collapseShow, setCollapseShow] = React.useState("hidden");
   const router = useLocation()
@@ -17,7 +17,7 @@ export default function Sidebar() {
             type="button"
             onClick={() => setCollapseShow("bg-white m-2 py-3 px-6")}
           >
-            <FontAwesomeIcon icon="fas fa-bars"/>
+            <FontAwesomeIcon icon="fas fa-bars" />
           </button>
           {/* Brand */}
           <Link to="/admin/dashboard"
@@ -61,7 +61,7 @@ export default function Sidebar() {
                     className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
                     onClick={() => setCollapseShow("hidden")}
                   >
-                    <FontAwesomeIcon icon="fas fa-times"/>
+                    <FontAwesomeIcon icon="fas fa-times" />
                   </button>
                 </div>
               </div>
@@ -152,7 +152,7 @@ export default function Sidebar() {
 
                   className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                 >
-                  <FontAwesomeIcon icon="fas fa-newspaper text-blueGray-400 mr-2 text-sm"/>{" "}
+                  <FontAwesomeIcon icon="fas fa-newspaper text-blueGray-400 mr-2 text-sm" />{" "}
                   All Messages
 
                 </Link>

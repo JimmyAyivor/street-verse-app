@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import MessageTableDropdown from "../Dropdowns/MessageTableDropdown.js";
+import MessageTableMenu from "../Menus/MessageTableMenu.js";
 
-export default function Modal({ id, message, fullname, email, handleDelete }) {
+export default function Modal({ message, fullname, email, handleDelete }) {
   const [showMessageViewModal, setMessageViewModal] = useState(false);
   const [showMessageDeleteModal, setMessageDeleteModal] = useState(false);
 
@@ -22,7 +22,7 @@ export default function Modal({ id, message, fullname, email, handleDelete }) {
 
   return (
     <>
-      <MessageTableDropdown closeViewModal={closeViewModal} openViewModal={openViewModal} closeDeleteModal={closeDeleteModal} openDeleteModal={openDeleteModal} />
+      <MessageTableMenu closeViewModal={closeViewModal} openViewModal={openViewModal} closeDeleteModal={closeDeleteModal} openDeleteModal={openDeleteModal} />
       {showMessageViewModal ? (
         <>
           <div

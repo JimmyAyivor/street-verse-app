@@ -1,21 +1,21 @@
 import React from "react";
-import EventTableDropdown from "../Dropdowns/EventTableDropdown.js";
+import EventTableMenu from "../Menus/EventTableMenu.js";
 
-export default function Modal({event,title,date}) {
+export default function Modal({ event, title, date }) {
   const [showModal, setShowModal] = React.useState(false);
-  
-  console.log(event,title,date);
-const closeModal = () => {
+
+  console.log(event, title, date);
+  const closeModal = () => {
     setShowModal(false)
-};
-  
-const openModal = () => {
+  };
+
+  const openModal = () => {
     setShowModal(true)
-};
-  
+  };
+
   return (
     <>
-    <EventTableDropdown  openModal={openModal} closeModal={closeModal}/>
+      <EventTableMenu openModal={openModal} closeModal={closeModal} />
       {showModal ? (
         <>
           <div
@@ -27,10 +27,10 @@ const openModal = () => {
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <p className="text px-50 text-black font-semibold">
-                   From: {title}
+                    From: {title}
                   </p>&nbsp;&nbsp;&nbsp;
                   <p className="text text-black font-semibold">
-                   Email: {date}
+                    Email: {date}
                   </p>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -44,10 +44,10 @@ const openModal = () => {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                <p className="text px-50 text-black font-semibold">
-                Message:
-                </p>
-                {date}
+                    <p className="text px-50 text-black font-semibold">
+                      Message:
+                    </p>
+                    {date}
                   </p>
                 </div>
                 {/*footer*/}

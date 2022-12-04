@@ -1,8 +1,25 @@
+import axios from 'axios';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Modal from '../Modals/UserModal.js';
 
-function CardMessage({ User, openModal }) {
+function CardMessage({ User, viewModal }) {
   const { id, firstname, lastname, email, status, img, roles, bio, created_at } = User;
+  const API = process.env.REACT_APP_API_URL;
+
+  const navigate = useNavigate()
+  const refreshPage = () => {
+    navigate(0);
+  }
+    const handleDelete = () => {
+      axios
+        .delete(`${API}/users/${id}`)
+        .then((response) => navigate(`/admin/users`))
+        refreshPage()
+        .catch((error) => console.projects(error));
+    };
+    
+
 
   return (
     <tr key={id}>
@@ -31,12 +48,12 @@ function CardMessage({ User, openModal }) {
       </td>
 
       <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-        <div className="overflow-hidden truncate w-14">
+        <div className="truncate w-64">
           {bio}
         </div>
       </td>
       <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-right">
-        <Modal openModal={openModal} id={id} user={User} firstname={firstname} email={email} />
+        <Modal viewModal={viewModal} id={id} user={User} firstname={firstname} email={email} handleDelete={handleDelete}/>
       </td>
     </tr>
   )
