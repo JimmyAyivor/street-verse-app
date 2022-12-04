@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 export default function Events() {
   return (
     <>
@@ -15,7 +17,8 @@ export default function Events() {
               </h1>
               <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
                 Get a sneak peek at our exciting members-only events, taking
-                place all over the world!
+                place all over the world! Participate in the discussions on our
+                private Discord channels to request or suggest new events.
               </p>
             </div>
           </div>
@@ -53,176 +56,267 @@ export default function Events() {
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
               <h2 className="text-4xl font-semibold text-Gray">Events</h2>
-              <p className="text-lg leading-relaxed mt-4 mb-4 text-Gray-900">
-                Get a sneak peek at our exciting members-only events, taking
-                place all over the world! Participate in the discussions on our
-                private Discord channels to request or suggest new events.
+              <p className="text-2xl leading-relaxed mt-4 mb-4 text-Gray-900">
+                Inside look at some upcoming events
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="max-w-screen-xl p-5 mx-auto dark:text-gray-100">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  London
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Sep</span>
+                </div>
+              </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  {" "}
+                  London Fashion Week
+                </a>
+              </h2>
+            </div>
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1587088155172-e9355df99c30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  New York
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Oct</span>
+                </div>
+              </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  New York Fashion Week
+                </a>
+              </h2>
+            </div>
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1605289355680-75fb41239154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  Paris
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Nov</span>
+                </div>
+              </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  Paris Fashion Week
+                </a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="h-40" />
+
+        <div className="container mx-auto px-4 ">
+          <div className="flex flex-wrap text-center justify-center">
+            <div className="w-full lg:w-6/12 px-4">
+              <h2 className=" italic text-4xl font-semibold text-Gray">
+                Members Only
+              </h2>
+              <p className="text-2xl leading-relaxed italic mt-4 mb-6 text-Gray-900">
+                Once-In-A-Lifetime Events
               </p>
             </div>
           </div>
         </div>
 
-        <section>
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap place-content-evenly gap-2">
-              <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                <img
-                  src="img/runway3.jpeg"
-                  alt=""
-                  className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                />
-                <div className="flex flex-col justify-between p-6 space-y-8">
-                  <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">London</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
-                      London Fashion{" "}
-                    </h2>
-                    <p className="dark:text-gray-100">
-                      London Fashion Week Streetwear September 2023.
-                    </p>
-                  </div>
+        <div className="max-w-screen-xl p-5 mx-auto dark:text-gray-100">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage: "url(img/supreme.jpeg)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  Paris
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Aug</span>
                 </div>
               </div>
-              <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                <img
-                  src="img/freedom-tower1.jpeg"
-                  alt=""
-                  className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                />
-                <div className="flex flex-col justify-between p-6 space-y-8">
-                  <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">New York</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
-                      New York{" "}
-                    </h2>
-                    <p className="dark:text-gray-100">
-                      New York Fashion Week Streetwear September 2023.
-                    </p>
-                  </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  {" "}
+                  Supreme x Louis Vuitton Fashion Show
+                </a>
+              </h2>
+            </div>
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1382&q=80)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  London
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Oct</span>
                 </div>
               </div>
-              <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                <img
-                  src="img/parisfashion.jpeg"
-                  alt=""
-                  className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                />
-                <div className="flex flex-col justify-between p-6 space-y-8">
-                  <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">Paris</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
-                      Paris Fashion{" "}
-                    </h2>
-                    <p className="dark:text-gray-100">
-                      Paris Fashion Week Streetwear September 2023.
-                    </p>
-                  </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  Tour the famous Vogue house
+                </a>
+              </h2>
+            </div>
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage:
+                  "url(https://images.unsplash.com/photo-1534126511673-b6899657816a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  New York
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Jul</span>
                 </div>
               </div>
-              <section>
-                <div className="pt-20 pb-10">
-                  <div className="container mx-auto px-4 ">
-                    <div className="flex flex-wrap text-center justify-center">
-                      <div className="w-full lg:w-6/12 px-4">
-                        <h2 className=" italic text-4xl font-semibold text-Gray">
-                          Member only events
-                        </h2>
-                        <p className="text-lg leading-relaxed mt-4 mb-6 text-Gray-900">
-                          Get a sneak peek at our exciting members-only events,
-                          taking place all over the world! Participate in the
-                          discussions on our private channels to request or
-                          suggest new events.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap place-content-evenly mb-9 gap-2">
-                      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                        <img
-                          src="img/supreme.jpeg"
-                          alt=""
-                          className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                        />
-                        <div className="flex flex-col justify-between p-6 space-y-8">
-                          <div className="space-y-2">
-                            <h2 className="text-2xl  tracking-wide">Paris</h2>
-                            <h2 className="text-3xl font-semibold tracking-wide">
-                              Paris Fashion Week{" "}
-                            </h2>
-                            <p className="dark:text-gray-100">
-                              Supreme Louis Vuitton runway show September 2023.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                        <img
-                          src="img/freedom-tower1.jpeg"
-                          alt=""
-                          className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                        />
-                        <div className="flex flex-col justify-between p-6 space-y-8">
-                          <div className="space-y-2">
-                            <h2 className="text-2xl  tracking-wide">
-                              New York
-                            </h2>
-                            <h2 className="text-3xl font-semibold tracking-wide">
-                              New York{" "}
-                            </h2>
-                            <p className="dark:text-gray-100">
-                              New York Fashion Week Streetwear September 2023.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                        <img
-                          src="img/heron.jpeg"
-                          alt=""
-                          className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                        />
-                        <div className="flex flex-col justify-between p-6 space-y-8">
-                          <div className="space-y-2">
-                            <h2 className="text-2xl  tracking-wide">
-                              New York
-                            </h2>
-                            <h2 className="text-3xl font-semibold tracking-wide">
-                              New York Fashion Week
-                            </h2>
-                            <p className="dark:text-gray-100">
-                              Preston Heron runway September 2023.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-                        <img
-                          src="img/swooshnike.jpg"
-                          alt=""
-                          className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500"
-                        />
-                        <div className="flex flex-col justify-between p-6 space-y-8">
-                          <div className="space-y-2">
-                            <h2 className="text-2xl  tracking-wide">
-                              New York
-                            </h2>
-                            <h2 className="text-3xl font-semibold tracking-wide">
-                              New York{" "}
-                            </h2>
-                            <p className="dark:text-gray-100">
-                              Polygon Ignite Nike .Swoosh Web3 event June 2023.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  Meet one of streetwears most exciting desingers
+                </a>
+              </h2>
+            </div>
+            <div
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              style={{
+                backgroundImage: "url(img/swooshnike.jpg)",
+              }}
+            >
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                >
+                  New York
+                </a>
+                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                    2023
+                  </span>
+                  <span className="leading-none uppercase">Jun</span>
                 </div>
-              </section>
+              </div>
+              <h2 className="z-10 p-5">
+                <a
+                  rel="noopener noreferrer"
+                  href="#"
+                  className="font-medium text-md hover:underline dark:text-gray-100"
+                >
+                  Polygon Ignite Nike .Swoosh Web3 event.
+                </a>
+              </h2>
             </div>
           </div>
-        </section>
+        </div>
+        <div className="h-40" />
       </main>
     </>
   );
