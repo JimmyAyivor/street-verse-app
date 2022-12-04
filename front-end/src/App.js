@@ -1,7 +1,7 @@
 import {  Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown, faArrowUp, faAward, faCalendarCheck, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faRetweet, faS,  faSearch,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faBars, faCalendar, faCalendarCheck, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faPhone, faRetweet, faS,  faSearch,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 
 import "./styles/tailwind.css";
@@ -32,7 +32,7 @@ import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
 
-library.add(fab, faS, faRetweet, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck);
+library.add(fab, faS, faRetweet,faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck);
 function App() {
 
 
