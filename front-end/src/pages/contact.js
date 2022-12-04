@@ -1,27 +1,54 @@
 import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+const API = process.env.REACT_APP_API_URL;
 
 export default function Contact() {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+  const [contact, setContact] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+
+  const navigate = useNavigate();
+
+  const addContact = () => {
+    axios
+      .post(`${API}/messages`, contact)
+      .then((response) => navigate(`/messages`))
+      .catch((error) => console.log(error));
   };
+
+  const handleTextChange = (e) => {
+    setContact({ ...contact, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addContact(contact);
+  };
+  //   const [status, setStatus] = useState("Submit");
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     setStatus("Sending...");
+  //     const { name, email, message } = e.target.elements;
+  //     let details = {
+  //       name: name.value,
+  //       email: email.value,
+  //       message: message.value,
+  //     };
+  //     let response = await fetch("http://localhost:3000/contact", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json;charset=utf-8",
+  //       },
+  //       body: JSON.stringify(details),
+  //     });
+  //     setStatus("Submit");
+  //     let result = await response.json();
+  //     alert(result.status);
+  //   };
   return (
     <>
       <main>
@@ -194,8 +221,10 @@ export default function Contact() {
                           Full Name
                         </label>
                         <input
+                          value={contact.fullName}
                           type="text"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          onChange={handleTextChange}
                           placeholder="Full Name"
                           required
                         />
@@ -209,8 +238,10 @@ export default function Contact() {
                           Email
                         </label>
                         <input
+                          value={contact.email}
                           type="email"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          onChange={handleTextChange}
                           placeholder="Email"
                           required
                         />
@@ -224,9 +255,11 @@ export default function Contact() {
                           Message
                         </label>
                         <textarea
+                          value={contact.message}
                           rows="4"
                           cols="80"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                          onChange={handleTextChange}
                           placeholder="Type a message..."
                           required
                         />
@@ -236,7 +269,7 @@ export default function Contact() {
                           className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                           type="button"
                         >
-                          {status}
+                          Send a Message
                         </button>
                       </div>
                     </form>
