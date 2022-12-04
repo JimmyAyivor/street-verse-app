@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import CardMessage from "../Cards/CardMessage.js"
 // components
 const API = process.env.REACT_APP_API_URL;
 
 export default function CardMessages({ color, title }) {
+ 
+  const navigate = useNavigate()
 
   const [messages, setMessages] = useState([]);
   useEffect(() => {
@@ -19,6 +22,9 @@ export default function CardMessages({ color, title }) {
         console.error(error);
       });
   }, [messages]);
+
+
+
 
 //Todo  Post Update Delete
 
@@ -57,17 +63,7 @@ export default function CardMessages({ color, title }) {
                       : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                   }
                 >
-                  #
-                </th>
-                <th
-                  className={
-                    "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
-                    (color === "light"
-                      ? "bg-blueGray-50 text-blueGray-500 border-blueGray-100"
-                      : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
-                  }
-                >
-                  Name
+                  Sender's Name
                 </th>
                 <th
                   className={
