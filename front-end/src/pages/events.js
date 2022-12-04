@@ -16,7 +16,7 @@ export default function Events() {
                 Events
               </h1>
               <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
-                Get a sneak peek at our exciting members-only events, taking
+                Get p sneak peek at our exciting members-only events, taking
                 place all over the world! Participate in the discussions on our
                 private Discord channels to request or suggest new events.
               </p>
@@ -62,25 +62,23 @@ export default function Events() {
             </div>
           </div>
         </div>
-        <div className="max-w-screen-xl p-5 mx-auto dark:text-gray-100">
+        <div className="max-w-screen-xl p-5 mx-auto text-gray-100">
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
             <div
-              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   London
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -88,33 +86,29 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   {" "}
                   London Fashion Week
-                </a>
+                </p>
               </h2>
             </div>
             <div
-              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1587088155172-e9355df99c30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   New York
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -122,32 +116,28 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   New York Fashion Week
-                </a>
+                </p>
               </h2>
             </div>
             <div
-              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1605289355680-75fb41239154?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   Paris
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -155,13 +145,11 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   Paris Fashion Week
-                </a>
+                </p>
               </h2>
             </div>
           </div>
@@ -181,24 +169,22 @@ export default function Events() {
           </div>
         </div>
 
-        <div className="max-w-screen-xl p-5 mx-auto dark:text-gray-100">
+        <div className="max-w-screen-xl p-5 mx-auto text-gray-100">
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-4 sm:grid-cols-2">
             <div
-              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage: "url(img/supreme.jpeg)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   Paris
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -206,33 +192,29 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   {" "}
                   Supreme x Louis Vuitton Fashion Show
-                </a>
+                </p>
               </h2>
             </div>
             <div
-              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-top bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1382&q=80)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   London
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -240,32 +222,28 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   Tour the famous Vogue house
-                </a>
+                </p>
               </h2>
             </div>
             <div
-              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage:
                   "url(https://images.unsplash.com/photo-1534126511673-b6899657816a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   New York
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -273,31 +251,27 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   Meet one of streetwears most exciting desingers
-                </a>
+                </p>
               </h2>
             </div>
             <div
-              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] dark:bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50 cursor-pointer"
+              className="relative flex items-end justify-start w-full text-left bg-center bg-cover h-96 lg:h-[600px] bg-gray-500 transition duration-200 ease-in transform sm:hover:scale-105 hover:z-40 cursor-pointer"
               style={{
                 backgroundImage: "url(img/swooshnike.jpg)",
               }}
             >
-              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b dark:via-transparent dark:from-gray-900 dark:to-gray-900"></div>
+              <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase dark:text-gray-100 "
+                <p
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
                 >
                   New York
-                </a>
-                <div className="flex flex-col justify-start text-center dark:text-gray-100">
+                </p>
+                <div className="flex flex-col justify-start text-center text-gray-100">
                   <span className="text-3xl font-semibold leading-none tracking-wide">
                     2023
                   </span>
@@ -305,13 +279,11 @@ export default function Events() {
                 </div>
               </div>
               <h2 className="z-10 p-5">
-                <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="font-medium text-md hover:underline dark:text-gray-100"
+                <p
+                  className="font-medium text-md hover:underline text-gray-100"
                 >
                   Polygon Ignite Nike .Swoosh Web3 event.
-                </a>
+                </p>
               </h2>
             </div>
           </div>
