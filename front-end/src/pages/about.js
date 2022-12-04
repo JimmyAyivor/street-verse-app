@@ -26,10 +26,6 @@ export default function About() {
                         src="/img/stbanner.jpeg"
                         className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
                     >
-
-
-
-
                     </img>
                 </div>
                 <div className="container relative mx-auto">
@@ -59,7 +55,7 @@ export default function About() {
                     <div className="container mx-auto px-4">
                         <div className="flex flex-wrap justify-center text-center mb-24">
                             <div className="w-full lg:w-6/12 px-6">
-                                <h2 className="text-6xl font-semibold">About Us</h2>
+                                <h2 className="text-6xl font-semibold underline">About Us</h2>
                                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
                                     StreetVerse is the world’s premier global NFT streetwear club. We are a community built by fashion lovers, founded to celebrate the authenticity and diversity of streetwear culture. Our members will have access to a world of premier releases and events, exclusive access to the latest drops, and an elite community of like-minded enthusiasts and experts - not to mention some of the most interesting designers on the planet.
                                 </p>
