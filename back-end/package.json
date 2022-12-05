@@ -12,10 +12,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@thirdweb-dev/auth": "^2.0.33",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "dotenv": "^14.3.0",
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.8.0",
     "pg-promise": "^10.11.1",
-    "react-scripts": "5.0.0"
+    "react-scripts": "^5.0.1"
   }
 }

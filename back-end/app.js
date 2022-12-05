@@ -1,5 +1,6 @@
 // DEPENDENCIES
 const cors = require("cors");
+
 const express = require("express");
 
 // CONFIGURATION
@@ -11,26 +12,20 @@ app.use(express.json()); // Parse incoming JSON
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.send("StreetVerse API!");
 });
 
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
-const db = require("./db/dbConfig.js");
+const usersController = require("./controllers/usersController.js");
+const messagesController = require("./controllers/messagesController.js");
+const eventsController = require("./controllers/eventsController.js");
 
-app.get("/test", async (req, res) => {
-  try {
-    const allDays = await db.any("SELECT * FROM test");
-    res.json(allDays);
-  } catch (err) {
-    res.json(err);
-  }
+app.use("/users", usersController);
+app.use("/events", eventsController);
+app.use("/messages", messagesController);
+app.get("*", (req, res) => {
+  res.status(404).send("page not found");
 });
 
-/////////////////////////////////////
-// REMOVE AFTER SUCCESSFUL DEPLOYMENT
-/////////////////////////////////////
 
-// EXPORT
+
 module.exports = app;

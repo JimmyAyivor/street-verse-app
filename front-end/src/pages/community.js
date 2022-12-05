@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Commuiniy() {
+export default function Community() {
   return (
     <>
       <main>

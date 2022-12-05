@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 // components
 
-import TableDropdown from "../../components/Dropdowns/TableDropdown.js";
+import TableDropdown from "../Menus/TableDropdown.js";
 
-export default function CardTable({ color }) {
+export default function CardTable({ color, title }) {
   return (
     <>
       <div
@@ -23,7 +23,7 @@ export default function CardTable({ color }) {
                   (color === "light" ? "text-blueGray-700" : "text-white")
                 }
               >
-                Card Tables
+                {title}
               </h3>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function CardTable({ color }) {
                       : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                   }
                 >
-                  Project
+                  Project ONE
                 </th>
                 <th
                   className={

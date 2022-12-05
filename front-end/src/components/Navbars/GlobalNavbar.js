@@ -62,7 +62,7 @@ export default function Navbar(props) {
                   to="/community"
                   target="_self"
                 >
-                  Communty
+                  Community
                 </Link>
               </li>
 
