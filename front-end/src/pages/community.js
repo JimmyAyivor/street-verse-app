@@ -31,7 +31,7 @@ export default function Community() {
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
-            <source src="/img/communit1.mp4" type="video/mp4" />
+            <source src="/img/MyMovie.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -65,7 +65,7 @@ export default function Community() {
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-5xl font-semibold">Our Community</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  A Community Built By StreetWear Fashion Lovers 
+                  A Community Built By StreetWear Fashion Lovers
                   <div></div>
                   Together, We Are Curious, Generous, Inclusive
                 </p>
