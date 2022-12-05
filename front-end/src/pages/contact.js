@@ -6,7 +6,7 @@ const API = process.env.REACT_APP_API_URL;
 
 export default function Contact() {
   const [contact, setContact] = useState({
-    fullName: "",
+    fullname: "",
     email: "",
     message: "",
   });
@@ -16,7 +16,7 @@ export default function Contact() {
   const addContact = () => {
     axios
       .post(`${API}/messages`, contact)
-      .then((response) => navigate(`/messages`))
+      .then((response) => navigate(`/`))
       .catch((error) => console.log(error));
   };
 
@@ -28,6 +28,8 @@ export default function Contact() {
     e.preventDefault();
     addContact(contact);
   };
+
+  console.log(contact)
   //   const [status, setStatus] = useState("Submit");
   //   const handleSubmit = async (e) => {
   //     e.preventDefault();
@@ -223,7 +225,8 @@ export default function Contact() {
                           Full Name
                         </label>
                         <input
-                          value={contact.fullName}
+                          value={contact.fullname}
+                          id="fullname"
                           type="text"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           onChange={handleTextChange}
@@ -241,6 +244,7 @@ export default function Contact() {
                         </label>
                         <input
                           value={contact.email}
+                          id="email"
                           type="email"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           onChange={handleTextChange}
@@ -258,6 +262,7 @@ export default function Contact() {
                         </label>
                         <textarea
                           value={contact.message}
+                          id="message"
                           rows="4"
                           cols="80"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
