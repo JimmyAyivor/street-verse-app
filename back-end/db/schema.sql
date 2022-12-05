@@ -17,7 +17,7 @@ create table if not exists users (
   wallet_id  char(42) unique not null,
   username   text unique,
   firstname  text not null,
-  lastname   text not null,
+  lastame   text not null,
   img        text not null,
   email      text unique not null,
   "address"  text,
@@ -38,16 +38,12 @@ create table if not exists users (
 );
 
 
-
+  
 
 
 create trigger updated_at before update on users for each row execute procedure set_updated_at();
 
-create table if not exists memberships (
-  id     serial primary key,
-  teir   text not null,
-  price  int not null
-);
+
 
 
 
@@ -60,7 +56,6 @@ create table if not exists events (
   long_desc text not null,
   "date"     date not null,
   "location" text not null,
-  membership int not null references memberships(id) on delete cascade,
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
 );

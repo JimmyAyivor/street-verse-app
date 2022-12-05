@@ -115,7 +115,7 @@ export default function CardMessages({ color, title }) {
             <tbody>
 
               {users[0]?users.map((user) => {
-                return <CardUser key={user.id} id={user.id} User={user} color = "light"/>;
+                return <CardUser key={user.id} id={user.id} User={user} color = {color}/>;
               }):<tr><td className={
                 "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
                 (color === "light"
