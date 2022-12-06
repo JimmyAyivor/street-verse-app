@@ -100,7 +100,7 @@ export default function Navbar(props) {
                   to="admin/dashboard"
                   target="_self"
                 >
-                  Admin Dashboard
+                  Dashboard
                 </Link>
               </li>
             </ul>

@@ -16,7 +16,7 @@ export default function Events() {
                 Events
               </h1>
               <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
-                Get p sneak peek at our exciting members-only events, taking
+                Get a sneak peek at our exciting members-only events, taking
                 place all over the world! Participate in the discussions on our
                 private Discord channels to request or suggest new events.
               </p>
