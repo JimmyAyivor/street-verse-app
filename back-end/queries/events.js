@@ -32,10 +32,10 @@ const deleteEvent = async (id) => {
 
 const createEvent = async (event) => {
     try {
-        const {title,short_desc,thumbnail,image,long_desc,date,event_location} = event;
+        const { title, short_desc, thumbnail, img, long_desc, date, location } = event;
         const newEvent = await db.one(
-            "INSERT INTO events (title,short_desc,thumbnail,image,long_desc,date,event_location) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
-            [title,short_desc,thumbnail,image,long_desc,date,event_location]
+            "INSERT INTO events (title,short_desc,thumbnail,img,long_desc,date,location) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+            [title, short_desc, thumbnail, img, long_desc, date, location]
         );
         return newEvent;
     } catch (err) {
@@ -44,10 +44,10 @@ const createEvent = async (event) => {
 };
 const updateEvent = async (event, id) => {
     try {
-        const {title,short_desc,thumbnail,image,long_desc,date,event_location } = event;
+        const { title, short_desc, thumbnail, img, long_desc, date, location } = event;
         const updatedEvent = await db.one(
-            "UPDATE events SET title = $1,short_desc =$2,thumbnail =$3,image =$4,long_desc = $5,date =$6,event_location = $7  WHERE id = $8 RETURNING *",
-            [title,short_desc,thumbnail,image,long_desc,date,event_location, id]
+            "UPDATE events SET title = $1,short_desc =$2,thumbnail =$3,img=$4,long_desc = $5,date =$6,location = $7  WHERE id = $8 RETURNING *",
+            [title, short_desc, thumbnail, img, long_desc, date, location, id]
         );
         return updatedEvent;
     } catch (error) {
