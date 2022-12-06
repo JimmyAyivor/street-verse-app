@@ -1,4 +1,3 @@
-const users = require("../controllers/usersController.js");
 const db = require("../config/dbConfig.js");
 
 const getAllUsers = async () => {
@@ -33,7 +32,26 @@ const deleteUser = async (id) => {
 
 const createUser = async (user) => {
     try {
-        const { uid, firstname, lastname, email, img, roles, bio } = user;
+        const { uid,       
+            wallet_id,   
+            username,    
+            firstname,   
+            lastname,    
+            img,         
+            email,       
+            address,  
+            city,        
+            country,     
+            postalcode,  
+            occupation,  
+            bio,         
+            facebook,    
+            twitter,     
+            instagram,   
+            google,      
+            website,     
+            status,    
+            roles } = user;
         const newUser = await db.one(
             `INSERT INTO users (uid,       
                 wallet_id,   
@@ -45,7 +63,7 @@ const createUser = async (user) => {
                 address,  
                 city,        
                 country,     
-                postalCode,  
+                postalcode,  
                 occupation,  
                 bio,         
                 facebook,    
@@ -65,7 +83,7 @@ const createUser = async (user) => {
                 address,
                 city,
                 country,
-                postalCode,
+                postalcode,
                 occupation,
                 bio,
                 facebook,
@@ -93,7 +111,7 @@ const updateUser = async (user, id) => {
             address,
             city,
             country,
-            postalCode,
+            postalcode,
             occupation,
             bio,
             facebook,
@@ -113,7 +131,7 @@ const updateUser = async (user, id) => {
             address=$8,  
             city=$9,        
             country=$10,     
-            postalCode=$11,  
+            postalcode=$11,  
             occupation=$12,  
             bio=$13,         
             facebook=$14,    
@@ -133,7 +151,7 @@ const updateUser = async (user, id) => {
                 address,
                 city,
                 country,
-                postalCode,
+                postalcode,
                 occupation,
                 bio,
                 facebook,

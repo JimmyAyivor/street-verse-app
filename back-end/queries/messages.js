@@ -1,4 +1,3 @@
-const messages = require("../controllers/messagesController.js");
 const db = require("../config/dbConfig.js");
 
 const getAllMessages = async () => {

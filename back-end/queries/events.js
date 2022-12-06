@@ -1,4 +1,3 @@
-const events = require("../controllers/eventsController.js");
 const db = require("../config/dbConfig.js");
 
 const getAllEvents = async () => {
@@ -33,22 +32,22 @@ const deleteEvent = async (id) => {
 
 const createEvent = async (event) => {
     try {
-        const {title,short_desc,thumbnail,image,long_desc,date,location,membership } = event;
+        const {title,short_desc,thumbnail,image,long_desc,date,event_location} = event;
         const newEvent = await db.one(
-            "INSERT INTO events (title,short_desc,thumbnail,image,long_desc,date,location,membership) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *",
-            [title,short_desc,thumbnail,image,long_desc,date,location,membership]
+            "INSERT INTO events (title,short_desc,thumbnail,image,long_desc,date,event_location) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+            [title,short_desc,thumbnail,image,long_desc,date,event_location]
         );
         return newEvent;
     } catch (err) {
         return err;
     }
 };
-const updateEvent = async (user, id) => {
+const updateEvent = async (event, id) => {
     try {
-        const { uid, firstname, lastname, email, img, roles } = user;
+        const {title,short_desc,thumbnail,image,long_desc,date,event_location } = event;
         const updatedEvent = await db.one(
-            "UPDATE events SET uid = $1, firstname = $2, lastname = $3, email = $4, img = $5, roles = $6  WHERE id = $7 RETURNING *",
-            [uid, firstname, lastname, email, img, roles, id]
+            "UPDATE events SET title = $1,short_desc =$2,thumbnail =$3,image =$4,long_desc = $5,date =$6,event_location = $7  WHERE id = $8 RETURNING *",
+            [title,short_desc,thumbnail,image,long_desc,date,event_location, id]
         );
         return updatedEvent;
     } catch (error) {

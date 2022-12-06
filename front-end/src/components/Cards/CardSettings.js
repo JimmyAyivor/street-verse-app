@@ -1,11 +1,60 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
-export default function CardSettings({
-  user,
-  handleSubmit,
-  handleTextChange,
-  handleZipChange,
-}) {
+const API = process.env.REACT_APP_API_URL;
+
+export default function CardSettings() {
+  let { id } = 1;
+  const navigate = useNavigate();
+
+  const [user, setUser] = useState({
+            id,
+            wallet_id:"",
+            username:"",
+            firstname:"",
+            lastname:"",
+            img:"",
+            email:"",
+            address:"",
+            city:"",
+            country:"",
+            postalcode:"",
+            occupation:"",
+            bio:"",
+            facebook:"",
+            twitter:"",
+            instagram:"",
+            google:"",
+            website:"",
+            status:"",
+            roles:"",
+  });
+
+  const handleTextChange = (event) => {
+    setUser({ ...user, [event.target.id]: event.target.value });
+  };
+
+  useEffect(() => {
+    axios
+      .get(`${API}/users/${id}`)
+      .then((response) => setUser(response.data.payload))
+      .catch((error) => console.error(error));
+  }, [id]);
+  const updateSnack = () => {
+    axios
+      .put(`${API}/users/${id}`, user)
+      .then((response) => {
+        setUser(response.data);
+        navigate(`/admin/settings`);
+      })
+      .catch((error) => console.error(error));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    updateSnack();
+  };
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
@@ -15,7 +64,7 @@ export default function CardSettings({
             <button
               onClick={handleSubmit}
               className="bg-blueGray-700 active:bg-blueGray-600 text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
-              type="button"
+              type="submit"
             >
               Update
             </button>
@@ -173,7 +222,7 @@ export default function CardSettings({
                     type="text"
                     id="postalCode"
                     value={user.postalCode}
-                    onChange={handleZipChange}
+                    onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="Postal Code"
                   />
