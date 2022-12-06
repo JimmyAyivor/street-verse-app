@@ -1,7 +1,9 @@
 import {  Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown, faArrowUp, faAward, faBars, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+
+import { faArrowDown, faArrowUp, faAward, faBars, faCalendar, faCalendarCheck, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTv,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+
 
 
 import "./styles/tailwind.css";
@@ -38,6 +40,7 @@ import FourOFour from "./pages/fourOfour";
 
 
 library.add(fab, faS, faRetweet,faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable);
+
 function App() {
 
 

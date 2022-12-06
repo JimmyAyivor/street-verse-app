@@ -24,6 +24,7 @@ export default function Sidebar() {
 
             className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
           >
+            <FontAwesomeIcon icon="fas fa-tv mr-2 text-sm text-blueGray-300" />
             Dashboard
 
           </Link>
@@ -91,19 +92,19 @@ export default function Sidebar() {
 
                   className={
                     "text-xs uppercase py-3 font-bold block " +
-                    (router.pathname.indexOf("/admin/dashboard") !== -1
+                    (router.pathname.indexOf("/admin/users") !== -1
                       ? "text-lightBlue-500 hover:text-lightBlue-600"
                       : "text-blueGray-700 hover:text-blueGray-500")
                   }
                 >
-                  <i
-                    className={
-                      "fas fa-tv mr-2 text-sm " +
-                      (router.pathname.indexOf("/admin/dashboard") !== -1
+                  <FontAwesomeIcon
+                    icon={
+                      "fas fa-users mr-2 text-sm " +
+                      (router.pathname.indexOf("/admin/users") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
-                  ></i>{" "}
+                  />{" "}
                   All Users
 
                 </Link>
@@ -116,25 +117,29 @@ export default function Sidebar() {
               Manage Events
             </h6>
 
-            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none">
               <li className="items-center">
                 <Link to="/admin/events"
 
-                  className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (router.pathname.indexOf("/admin/events") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
                 >
-                  <i
-                    className={
-                      "fas fa-table mr-2 text-sm " +
+                  <FontAwesomeIcon
+                    icon={
+                      "fas fa-calendar-check mr-2 text-sm " +
                       (router.pathname.indexOf("/admin/events") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
-                  ></i>
+                  />{" "}
                   All Events
 
                 </Link>
               </li>
-
 
             </ul>
 
@@ -146,18 +151,29 @@ export default function Sidebar() {
             </h6>
             {/* Navigation */}
 
-            <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none">
               <li className="items-center">
                 <Link to="/admin/messages"
 
-                  className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (router.pathname.indexOf("/admin/messages") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
                 >
-                  <FontAwesomeIcon icon="fas fa-newspaper text-blueGray-400 mr-2 text-sm" />{" "}
+                  <FontAwesomeIcon
+                    icon={
+                      "fas fa-newspaper mr-2 text-sm " +
+                      (router.pathname.indexOf("/admin/messages") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  />{" "}
                   All Messages
 
                 </Link>
               </li>
-
 
             </ul>
 

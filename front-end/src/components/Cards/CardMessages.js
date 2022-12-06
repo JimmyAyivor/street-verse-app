@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import CardMessage from "../Cards/CardMessage.js"
 // components
@@ -9,7 +8,6 @@ const API = process.env.REACT_APP_API_URL;
 
 export default function CardMessages({ color, title }) {
  
-  const navigate = useNavigate()
 
   const [messages, setMessages] = useState([]);
   useEffect(() => {
