@@ -2,18 +2,19 @@ import React from "react";
 
 // components
 
-import AdminNavbar from "../components/Navbars/AdminNavbar.js";
-import Sidebar from "../components/Sidebar/Sidebar";
-import HeaderStats from "../components/Headers/HeaderStats.js";
+import UserNavbar from "../components/Navbars/UserNavbar.js";
+import UserSidebar from "../components/Sidebar/UserSidebar";
 import FooterAdmin from "../components/Footers/FooterAdmin.js";
+import UserHeader from "../components/Headers/UserHeader.js";
 
-export default function Admin({ children }) {
+
+export default function User({ children }) {
   return (
     <>
-      <Sidebar />
+      <UserSidebar />
       <div className="relative md:ml-64 bg-blueGray-100">
-        <AdminNavbar />
-        <HeaderStats />
+        <UserNavbar />
+        <UserHeader />
         <div className="px-4 md:px-10 mx-auto w-full -m-24">
           {children}
           <FooterAdmin />

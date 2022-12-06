@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // components
 
@@ -29,7 +30,6 @@ export default function CardTable({ color, title }) {
           </div>
         </div>
         <div className="block w-full overflow-x-auto">
-          {/* Projects table */}
           <table className="items-center w-full bg-transparent border-collapse">
             <thead>
               <tr>
@@ -114,7 +114,11 @@ export default function CardTable({ color, title }) {
                   $2,500 USD
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-orange-500 mr-2"></i> pending
+                  <FontAwesomeIcon
+                    icon="fas fa-circle"
+                    className="text-orange-500 mr-2"
+                  ></FontAwesomeIcon>{" "}
+                  pending
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
@@ -177,7 +181,10 @@ export default function CardTable({ color, title }) {
                   $1,800 USD
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
+                  <FontAwesomeIcon
+                    icon="fas fa-circle"
+                    className="text-emerald-500 mr-2"
+                  ></FontAwesomeIcon>{" "}
                   completed
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -241,7 +248,11 @@ export default function CardTable({ color, title }) {
                   $3,150 USD
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-red-500 mr-2"></i> delayed
+                  <FontAwesomeIcon
+                    icon="fas fa-circle"
+                    className="text-red-500 mr-2"
+                  ></FontAwesomeIcon>{" "}
+                  delayed
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
@@ -304,8 +315,11 @@ export default function CardTable({ color, title }) {
                   $4,400 USD
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-teal-500 mr-2"></i> on
-                  schedule
+                  <FontAwesomeIcon
+                    icon="fas fa-circle"
+                    className="text-teal-500 mr-2"
+                  ></FontAwesomeIcon>{" "}
+                  on schedule
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
@@ -368,7 +382,10 @@ export default function CardTable({ color, title }) {
                   $2,200 USD
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                  <i className="fas fa-circle text-emerald-500 mr-2"></i>{" "}
+                  <FontAwesomeIcon
+                    icon="fas fa-circle"
+                    className=" text-emerald-500 mr-2"
+                  ></FontAwesomeIcon>{" "}
                   completed
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
