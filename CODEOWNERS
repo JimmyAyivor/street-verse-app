@@ -5,7 +5,5 @@
 #
 #
 
- *.js            @JimmyAyivor
- *.md            @ctay47 @JimmyAyivor
- components/*    @JimmyAyivor @Jorge-Carrera
- *.css           @Nique444 @JimmyAyivor
+ *.js           @JimmyAyivor
+

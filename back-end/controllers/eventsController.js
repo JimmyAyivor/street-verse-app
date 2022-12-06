@@ -8,11 +8,6 @@ const {
   updateEvent,
 } = require("../queries/events.js");
 
-// const {
-//   checkName,
-//   checkImage,
-//   checkHealth,
-// } = require("../validations/checkEvents.js");
 
 events.get("/", async (req, res) => {
   const allEvents = await getAllEvents();

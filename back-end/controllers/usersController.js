@@ -8,11 +8,6 @@ const {
   updateUser,
 } = require("../queries/users.js");
 
-// const {
-//   checkName,
-//   checkImage,
-//   checkHealth,
-// } = require("../validations/checkUsers.js");
 
 users.get("/", async (req, res) => {
   const allUsers = await getAllUsers();

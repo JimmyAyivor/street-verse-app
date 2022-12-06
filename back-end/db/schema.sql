@@ -13,11 +13,11 @@ end;
 $$;
 create table if not exists users (
   id    serial primary key,
-  "uid"      text unique,
+  "uid"     text unique,
   wallet_id  char(42) unique not null,
   username   text unique,
   firstname  text not null,
-  lastame   text not null,
+  lastame    text not null,
   img        text not null,
   email      text unique not null,
   "address"  text,
