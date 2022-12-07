@@ -2,7 +2,7 @@ import {  Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarker, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUniversity,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUniversity,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 
 
