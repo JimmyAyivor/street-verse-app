@@ -24,8 +24,7 @@ export default function Sidebar() {
             Dashboard
           </Link>
           <ul className="md:hidden items-center flex flex-wrap list-none">
-            <li className="inline-block relative">
-            </li>
+            <li className="inline-block relative"></li>
             <li className="inline-block relative">
               <UserDropdown />
             </li>
@@ -76,18 +75,13 @@ export default function Sidebar() {
               <li className="items-center">
                 <Link
                   to="/user/community"
-                  className={
-                    "text-xs uppercase py-3 font-bold block " +
-                    (router.pathname.indexOf("/admin/dashboard") !== -1
-                      ? "text-lightBlue-500 hover:text-lightBlue-600"
-                      : "text-blueGray-700 hover:text-blueGray-500")
-                  }
+                  className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                 >
                   <FontAwesomeIcon
                     icon="fas fa-tv"
                     className={
                       "mr-2 text-sm " +
-                      (router.pathname.indexOf("/admin/dashboard") !== -1
+                      (router.pathname.indexOf("/user/community") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -112,7 +106,7 @@ export default function Sidebar() {
                     icon="fas fa-table"
                     className={
                       "mr-2 text-sm " +
-                      (router.pathname.indexOf("/admin/events") !== -1
+                      (router.pathname.indexOf("/user/events") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -134,7 +128,15 @@ export default function Sidebar() {
                   to="/user/messages"
                   className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                 >
-                  <FontAwesomeIcon icon="fas fa-newspaper text-blueGray-400 mr-2 text-sm" />{" "}
+                  <FontAwesomeIcon
+                    icon="fas fa-newspaper"
+                    className={
+                      "mr-2 text-sm " +
+                      (router.pathname.indexOf("/user/messages") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  />
                   All Messages
                 </Link>
               </li>
