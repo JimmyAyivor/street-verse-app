@@ -11,17 +11,14 @@ export default function CardMessages({Event,openModal}) {
   const navigate = useNavigate()
   const refreshPage = () => {
     navigate(0);
-  }
-    const handleDelete = () => {
-      axios
-        .delete(`${API}/events/${id}`)
-        .then((response) => navigate(`/admin/events`))
-        refreshPage()
-        .catch((error) => console.projects(error));
-    };
-    
+  };
+  const handleDelete = () => {
+    axios
+      .delete(`${API}/events/${id}`)
+      .then((response) => navigate(`/admin/events`));
+    refreshPage().catch((error) => console.projects(error));
+  };
 
-  
   return (
     <>
   <tr>
