@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
 import CardCommunity from "./CardCommunity"
 
 const API = process.env.REACT_APP_API_URL;
