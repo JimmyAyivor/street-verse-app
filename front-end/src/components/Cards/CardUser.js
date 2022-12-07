@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Modal from '../Modals/UserModal.js';
 
 function CardMessage({ User, viewModal }) {
@@ -23,6 +23,7 @@ function CardMessage({ User, viewModal }) {
 
   return (
     <tr key={id}>
+      <Link to={`/profile/${id}`}>
       <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
         <div className="flex">
 
@@ -35,7 +36,7 @@ function CardMessage({ User, viewModal }) {
           {firstname} {lastname}<br></br>
           {email}</div>
 
-      </td>
+      </td></Link>
       <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
         {status}
       </td>
