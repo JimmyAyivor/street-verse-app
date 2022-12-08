@@ -2,7 +2,7 @@ import {  Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-import { faArrowDown, faArrowUp, faAward, faBars, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faBars, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -37,9 +37,10 @@ import TermsAndConditions from "./pages/terms";
 import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
+import EventShow from "./pages/eventShow";
 
 
-library.add(fab, faS, faRetweet,faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable);
+library.add(fab, faS, faRetweet,faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable, faMapMarkerAlt);
 
 function App() {
 
@@ -80,6 +81,7 @@ function App() {
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/event/:id" element={<EventShow /> }/>
 
           <Route path="*" element={<FourOFour />} />
         </Routes>
