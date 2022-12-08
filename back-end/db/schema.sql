@@ -14,14 +14,14 @@ $$;
 DROP TABLE IF EXISTS users;
 create table if not exists users (
   id         serial primary key,
-  uid      text unique,
+  uid        text unique,
   wallet_id  char(42) unique not null,
   username   text unique,
   firstname  text not null,
   lastname    text not null,
   img        text not null,
   email      text unique not null,
-  address  text,
+  address    text,
   city       text,
   country    text,
   postalcode int ,
@@ -49,14 +49,14 @@ create trigger updated_at before update on users for each row execute procedure 
 
 DROP TABLE IF EXISTS events;
 create table if not exists events (
-  id    serial primary key,
-  title text not null,
+  id         serial primary key,
+  title      text not null,
   short_desc text not null,
-  thumbnail text not null,
-  img       text not null,
-  long_desc text not null,
-  date      date not null,
-  location  text not null,
+  thumbnail  text not null,
+  img        text not null,
+  long_desc  text not null,
+  date       date not null,
+  location   text not null,
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
 );
