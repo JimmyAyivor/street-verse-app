@@ -19,11 +19,14 @@ export default function User({ children }) {
       setTitle("Your Community")
       setSubHeading("Celebrate authenticity and diversity of street-wear culture!")
     } else if (router.pathname === "/user/events") {
-      setTitle("Your Events")
-      setSubHeading("Here are some upcoming and past events")
+      setTitle("Your Events");
+      setSubHeading("Here are some upcoming and past events");
+    } else if (router.pathname === "/user/messages") {
+      setTitle("Your Messages");
+      setSubHeading("Messages from the Community");
     } else {
-      setTitle("Your Messages")
-      setSubHeading("Community sub heading")
+      setTitle("");
+      setSubHeading("hidden for sizing");
     }
   }, [router])
 
