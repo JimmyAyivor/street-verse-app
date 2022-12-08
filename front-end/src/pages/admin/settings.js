@@ -3,7 +3,7 @@ import CardSettings from "../../components/Cards/CardSettings.js";
 import CardProfile from "../../components/Cards/CardProfile.js";
 import axios from "axios";
 import { useState, useEffect } from "react";
-// import { useParams, useNavigate } from "react-router-dom";
+ import { useNavigate } from "react-router-dom";
 
 const API = process.env.REACT_APP_API_URL;
 
