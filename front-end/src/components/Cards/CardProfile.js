@@ -67,7 +67,11 @@ export default function CardProfile({ user }) {
             <div className="flex flex-wrap justify-center">
               <div className="w-full lg:w-9/12 px-4">
                 <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                  {showMore ? `${bio}` : `${bio.substring(0, 200)}`}
+
+                  {showMore ? `${user.bio}` : `${user.bio.substring(0, 150)}`}
+
+
+
                 </p>
                 <a
                   href="#pablo"
