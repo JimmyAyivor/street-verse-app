@@ -9,7 +9,7 @@ const API = process.env.REACT_APP_API_URL;
 
 export default function CardCommunities() {
     const [users, setUsers] = useState([]);
-   const title = useTitle("Our Community | StretVerse ")
+    useTitle("Your Community | StreetVerse ")
     
     useEffect(() => {
         axios
