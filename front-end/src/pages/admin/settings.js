@@ -15,14 +15,14 @@ export default function Settings() {
   const [user, setUser] = useState({
     username: "",
     email: "",
-    firstName: "",
-    lastName: "",
+    firstname: "",
+    lastname: "",
     address: "",
     city: "",
     country: "",
-    postalCode: "",
+    postalcode: "",
     occupation: "",
-    profilePic: "",
+    img: "",
     bio: "",
   });
 
