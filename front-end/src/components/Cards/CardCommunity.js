@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CardCommunity = ({ user, id }) => {
+const CardCommunity = ({user}) => {
+    const {id, firstname,lastname,img,occupation} = user
+    
     return (
 
 
@@ -11,17 +13,17 @@ const CardCommunity = ({ user, id }) => {
 
         ">
             <div className="px-6 mb-8">
-                <Link to= { `/profile/${user.id}`}>
+                <Link to= { `/profile/${id}`}>
                 <img
                     alt="..."
-                    src={user.img}
+                    src={img}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 </Link>
                 <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">{user.firstname} {user.lastname}</h5>
+                    <h5 className="text-xl font-bold">{firstname} {lastname}</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                        {user.occupation}
+                        {occupation}
                     </p>
                     <div className="mt-3">
                         <button

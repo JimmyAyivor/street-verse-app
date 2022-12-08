@@ -92,7 +92,7 @@ export default App
 function LayoutsUserNavbar() {
   return (
     <>
-      <UserNavbar>
+      <UserNavbar >
         <Outlet />
       </UserNavbar>
       <AdminFooter />

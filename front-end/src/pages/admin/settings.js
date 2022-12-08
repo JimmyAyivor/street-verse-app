@@ -8,7 +8,8 @@ import { useParams, useNavigate } from "react-router-dom";
 const API = process.env.REACT_APP_API_URL;
 
 export default function Settings() {
-  const { id } = useParams();
+  // const { id } = useParams();
+  let id = 1
   const navigate = useNavigate();
 
   const [user, setUser] = useState({
@@ -55,7 +56,7 @@ export default function Settings() {
   const handleSubmit = (e) => {
     e.preventDefault();
     updateUser(user);
-    console.log(user);
+  
   };
 
   return (

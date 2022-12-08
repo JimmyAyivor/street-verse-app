@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function CardProfile({ user }) {
   const [showMore, setShowMore] = useState(false);
 
-  // ToDo - add ability to update profile pic 
+  const  {firstname,lastname,img,city,country,bio, occupation}  = user
 
   return (
     <>
@@ -15,8 +15,8 @@ export default function CardProfile({ user }) {
             <div className="w-full px-4 flex justify-center">
               <div className="relative">
                 <img
-                  alt={user.userName || "image not found"}
-                  src={user.profilePic || "/img/team-2-800x800.jpg"}
+                  alt={firstname+" "+lastname || "image not found"}
+                  src={img || "/img/team-2-800x800.jpg"}
                   className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                 />
               </div>
@@ -46,28 +46,28 @@ export default function CardProfile({ user }) {
           </div>
           <div className="text-center mt-12">
             <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
-              {user.firstName} {user.lastName}
+              {firstname+' '+lastname}
             </h3>
             <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
               <FontAwesomeIcon
                 icon="fas fa-map-marker-alt"
                 className="mr-2 text-lg text-blueGray-400"
               ></FontAwesomeIcon>{" "}
-              {user.city}, {user.country}
+              {city}, {country}
             </div>
             <div className="mb-2 text-blueGray-600 mt-10">
               <FontAwesomeIcon
                 icon="fas fa-briefcase"
                 className="mr-2 text-lg text-blueGray-400"
               ></FontAwesomeIcon>
-              {user.occupation}
+              {occupation}
             </div>
           </div>
           <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
             <div className="flex flex-wrap justify-center">
               <div className="w-full lg:w-9/12 px-4">
                 <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                  {showMore ? `${user.bio}` : `${user.bio.substring(0, 200)}`}
+                  {showMore ? `${bio}` : `${bio.substring(0, 200)}`}
                 </p>
                 <a
                   href="#pablo"

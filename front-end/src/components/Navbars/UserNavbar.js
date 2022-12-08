@@ -1,8 +1,11 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
+
 import UserDropdown from "../Menus/UserDropdown";
 
 export default function Navbar() {
+
+  
   return (
     <>
       <nav className="absolute top-0 left-0 w-full z-10 bg-transparent md:flex-row md:flex-nowrap md:justify-start flex items-center p-4">
@@ -13,7 +16,7 @@ export default function Navbar() {
           >
             StreetVerse
           </Link>
-          <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
+        <ul className="flex-col md:flex-row list-none items-center hidden md:flex">
             <UserDropdown />
           </ul>
         </div>

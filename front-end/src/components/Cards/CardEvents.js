@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import { useTitle } from "../../hooks/useTitle.js";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardEvent from "./CardEvent.js"
@@ -10,6 +10,7 @@ export default function CardEvents({ color, title }) {
 
   const [events, setEvents] = useState([]);
   
+  useTitle("Member Events | StretVerse ")
 
   useEffect(() => {
     axios
@@ -20,9 +21,8 @@ export default function CardEvents({ color, title }) {
       .catch((error) => {
         console.error(error);
       });
-  }, [events]);
+  }, []);
 
-//Todo  Post Update Delete
 
   return (
     <>
@@ -41,7 +41,10 @@ export default function CardEvents({ color, title }) {
                   (color === "light" ? "text-blueGray-700" : "text-white")
                 }
               >
-                {title}
+                {title}   <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+  <span>ADD</span>
+</button>
               </h3>
             </div>
           </div>
@@ -132,10 +135,3 @@ export default function CardEvents({ color, title }) {
   );
 }
 
-CardEvents.defaultProps = {
-  color: "light",
-};
-
-CardEvents.propTypes = {
-  color: PropTypes.oneOf(["light", "dark"]),
-};
