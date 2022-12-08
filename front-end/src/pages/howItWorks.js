@@ -9,10 +9,10 @@ export default function HowItWorks() {
         >
           <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 text-white bg-gray-600 bg-opacity-50 rounded-xl">
             <div className="">
-              <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
+              <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
                 How It Works
               </h1>
-              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center ">
+              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium font-['Play'] text-yellow-200 text-center ">
                 Think of a StreetVerse Membership as your golden ticket into
                 a world of unrivalled global experiences. Purchased in the
                 form of a Non-Fungible Token (NFT), this unique digital
@@ -44,11 +44,7 @@ export default function HowItWorks() {
           <div className="items-center flex flex-wrap">
             <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div className="pr-12">
-                <h1 className="text-white font-semibold text-5xl">
-                  How It Works
-                </h1>
                 <p className="mt-4 text-lg text-blueGray-200">
-
                 </p>
               </div>
             </div>
@@ -76,8 +72,8 @@ export default function HowItWorks() {
                   <a href="#benefits"><div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                       <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
                     </div></a>
-                    <a href="#benefits"><h6 className="text-xl text-blue-600 font-semibold">Benefits</h6>
-                      <p className="text- font-semibold"> Click here to Explore the benefits you get with a StreetVerse membership below.</p></a>
+                    <a href="#benefits"><h6 className="text-xl text-blue-600 font-semibold font-['Play']">Benefits</h6>
+                      <p className="text- font-semibold font-['Play']"> Click here to Explore the benefits you get with a StreetVerse membership below.</p></a>
                   </div>
                 </div>
               </div>
@@ -88,8 +84,8 @@ export default function HowItWorks() {
                   <a href="#nft"><div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />
                     </div></a>
-                    <a href="#nft"><h6 className="text-xl text-blue-600 font-semibold">What are NTFs</h6>
-                      <p className="text- font-semibold"> Click here to learn more about NFT's</p></a>
+                    <a href="#nft"><h6 className="text-xl text-blue-600 font-semibold font-['Play']">What are NTFs</h6>
+                      <p className="text- font-semibold font-['Play']"> Click here to learn more about NFT's</p></a>
                   </div>
                 </div>
               </div>
@@ -108,8 +104,8 @@ export default function HowItWorks() {
                       href="/contact"
                       class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
                     >
-                      <h6 className="text-xl font-semibold">Contact Us</h6>
-                    </a><p className="text- font-semibold"> Should you have any questions you can reach us here:</p>
+                      <h6 className="text-xl font-semibold font-['Play']">Contact Us</h6>
+                    </a><p className="text- font-semibold font-['Play']"> Should you have any questions you can reach us here:</p>
                   </div>
                 </div>
               </div>
@@ -122,10 +118,6 @@ export default function HowItWorks() {
               <polygon id="benefits" className="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100" ></polygon>
             </svg>
           </div>
-
-
-
-
           <div className="container text-left mx-auto flex flex-col items-center justify-left space-y-8 md:p-10 md:px-24 xl:px-48 relative z-30 p-5 text-white  rounded-xl">
             <div >
               <div >
@@ -137,21 +129,21 @@ export default function HowItWorks() {
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-15 h-15 mb-5 shadow-lg rounded-full bg-blue-400">
                   <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
                 </div>
-                <h3 className="text-4xl text-white font-semibold">
+                <h3 className="text-4xl font-semibold font-['Play'] text-yellow-500">
                   Benefits
                 </h3>
-                <p className="mt-10 text-2xl text-white leading-relaxed font-semibold">
+                <p className="mt-10 text-2xl font-['Play'] text-yellow-200 leading-relaxed font-semibold">
                   THE COMMUNITY: Join our unique global community for access to
                   the most exclusive streetwear in the world. Communicate with
                   enthusiastic designers and fashionistas.
                 </p>
-                <p className="mt-10 text-2xl text-white leading-relaxed font-semibold">
+                <p className="mt-10 text-2xl font-['Play'] text-yellow-200 leading-relaxed font-semibold">
                   EVENTS & EXPERIENCES: Join the who’s who of the streetwear
                   fashioin scene at our specially curated member events. We will
                   be hosting semi-annual shows and dinners in Paris, London,
                   NYC, LA, HK, SF and Miami!
                 </p>
-                <p className="mt-10 text-2xl text-white leading-relaxed font-semibold">
+                <p className="mt-10 text-2xl font-['Play'] text-yellow-200 leading-relaxed font-semibold">
                   EXCLUSIVE OFFERS: Get access to some of the most hard-to-find
                   streetwear direct from the designers!
                 </p>
@@ -184,13 +176,13 @@ export default function HowItWorks() {
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-15 h-15 mb-5 shadow-lg rounded-full bg-red-400">
                   <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />
                 </div>
-                <h3 className="text-4xl text-white font-semibold">What are NTFs</h3>
-                <p className="mt-10 text-2xl text-white  leading-relaxed font-semibold">
+                <h3 className="text-4xl font-semibold font-['Play'] text-yellow-500">What are NTFs</h3>
+                <p className="mt-10 text-2xl leading-relaxed font-['Play'] text-yellow-200 font-semibold">
                   Non-fungible tokens (NFTs) are cryptographic assets on a
                   blockchain with unique identification codes and metadata
                   that distinguish them from each other.
                 </p>
-                <p className="mt-8 text-2xl  text-white leading-relaxed font-semibold">
+                <p className="mt-8 text-2xl font-['Play'] text-yellow-200 leading-relaxed font-semibold">
                   As a StreetVerse member, you’ll have the keys to unlock a
                   world of beautifully unique streetwear, exclusive offers on
                   rare items, and an entire community of like-minded

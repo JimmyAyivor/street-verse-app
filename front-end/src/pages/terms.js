@@ -7,8 +7,8 @@ export default function Terms() {
 
 
   return (
-    <div class="p-40 ... ">
-      <h1 class="text-center underline text-blueGray-700 font-bold text-4xl ... " >Terms & Conditions </h1>
+    <div class="p-40 ... font-['Play']">
+      <h1 class="text-center underline text-blueGray-700 font-bold text-4xl ... font-['Play'] " >Terms & Conditions </h1>
       
       <h3 class="text-right">Last updated: Dec 14, 2022</h3>
       <br></br>

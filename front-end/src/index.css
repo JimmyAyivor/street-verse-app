@@ -1,3 +1,7 @@
+/* Kdam Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* Play Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Play:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

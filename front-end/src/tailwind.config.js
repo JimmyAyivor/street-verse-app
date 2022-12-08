@@ -13,6 +13,8 @@ module.exports = {
     colors: {
       ...colors,
     },
+
+
     extend: {
       minHeight: {
         "screen-75": "75vh",
@@ -20,6 +22,18 @@ module.exports = {
       fontSize: {
         55: "55rem",
       },
+
+      fontFamily: {
+        KdamThmorPro: ['"Kdam Thmor Pro"', sans-serif]
+      },
+      fontFamily: {
+        Play: ['Play', sans-serif]
+      },
+
+      fontFamily: {
+        titles: ['Black Han Sans']
+      },
+
       opacity: {
         80: ".8",
       },

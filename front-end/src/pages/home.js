@@ -12,14 +12,15 @@ export default function Landing() {
         >
           <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 relative z-30 p-5 text-white  rounded-xl">
             <div className="relative">
-              <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
+              <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[100px] justfy-center object-center">
                 StreetVerse
               </h1>
-              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
+              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-['Play'] text-yellow-200 font-medium text-center">
                 The world’s premier global NFT streetwear club. We are a
                 community built by fashion lovers, founded to celebrate the
                 authenticity and diversity of streetwear culture.
               </p>
+            
             </div>
           </div>
           <video
@@ -28,7 +29,7 @@ export default function Landing() {
             muted
             className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
           >
-            <source src="/img/streetv.mp4" type="video/mp4" />
+            <source src="/img/StreetVerseRedLogo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
             <span
               id="blackOverlay"
@@ -71,9 +72,9 @@ export default function Landing() {
                       <FontAwesomeIcon icon="fa fa-users" />
                     </div>
 
-                    <h6 className="text-xl font-semibold">Community</h6>
+                    <h6 className="text-xl font-['Play'] font-semibold">Community</h6>
 
-                    <p className="mt-2 mb-4 text-blueGray-500">
+                    <p className="mt-2 mb-4 text-blueGray-500 font-['Play']">
                       Become an insider everywhere. Join our invaluable
                       community of top street wear creators, producers,
                       enthusiasts and collectors.
@@ -88,8 +89,8 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                       <FontAwesomeIcon icon="fa fa-calendar" />
                     </div>
-                    <h6 className="text-xl font-semibold">Experiences</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
+                    <h6 className="text-xl font-semibold font-['Play']">Experiences</h6>
+                    <p className="mt-2 mb-4 text-blueGray-500 font-['Play']">
                       A one-time fee will give you lifetime access to
                       unparalleled streetwear experiences around the world. Your
                       StreetVerse membership NFT is a tradable asset.
@@ -104,8 +105,8 @@ export default function Landing() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                       <FontAwesomeIcon icon="fa-solid fa-fingerprint" />
                     </div>
-                    <h6 className="text-xl font-semibold">Access</h6>
-                    <p className="mt-2 mb-4 text-blueGray-500">
+                    <h6 className="text-xl font-semibold font-['Play']">Access</h6>
+                    <p className="mt-2 mb-4 text-blueGray-500 font-['Play']">
                       Purchase one of kind NFT merch drops directly from your
                       favorite streetwear brands.
                     </p>
@@ -151,8 +152,8 @@ export default function Landing() {
           <div className="container mx-auto px-4 ">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-Gray">Events</h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-Gray-900">
+                <h2 className="text-4xl font-semibold text-Gray font-['Play']">Events</h2>
+                <p className="text-lg leading-relaxed mt-4 mb-4 text-Gray-900 font-['Play']">
                   Get a sneak peek at our exciting members-only events, taking
                   place all over the world! Participate in the discussions on
                   our private Discord channels to request or suggest new events.
@@ -173,11 +174,11 @@ export default function Landing() {
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                   <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">London</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
+                    <h2 className="text-2xl  tracking-wide font-['Play']">London</h2>
+                    <h2 className="text-3xl font-semibold tracking-wide font-['Play']">
                       London Fashion{" "}
                     </h2>
-                    <p className="dark:text-gray-100">
+                    <p className="dark:text-gray-100 font-['Play']">
                       London Fashion Week Streetwear September 2023.
                     </p>
                   </div>
@@ -191,11 +192,11 @@ export default function Landing() {
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                   <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">New York</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
+                    <h2 className="text-2xl  tracking-wide font-['Play']">New York</h2>
+                    <h2 className="text-3xl font-semibold tracking-wide font-['Play']">
                       New York{" "}
                     </h2>
-                    <p className="dark:text-gray-100">
+                    <p className="dark:text-gray-100 font-['Play']">
                       New York Fashion Week Streetwear September 2023.
                     </p>
                   </div>
@@ -209,11 +210,11 @@ export default function Landing() {
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                   <div className="space-y-2">
-                    <h2 className="text-2xl  tracking-wide">Paris</h2>
-                    <h2 className="text-3xl font-semibold tracking-wide">
+                    <h2 className="text-2xl  tracking-wide font-['Play']">Paris</h2>
+                    <h2 className="text-3xl font-semibold tracking-wide font-['Play']">
                       Paris Fashion{" "}
                     </h2>
-                    <p className="dark:text-gray-100">
+                    <p className="dark:text-gray-100 font-['Play']">
                       Paris Fashion Week Streetwear September 2023.
                     </p>
                   </div>
@@ -223,7 +224,7 @@ export default function Landing() {
           </div>
           <div className="flex flex-col justify-center items-center ">
             <Link to={'/events'}>
-              <button className="dark:bg-gray-900 rounded-md dark:text-gray-100 mx-auto mt-7 p-3 inline-block text-lg ">
+              <button className="dark:bg-gray-900 rounded-md dark:text-gray-100 mx-auto mt-7 p-3 inline-block text-lg font-['Play']">
                 View All Events
               </button>
             </Link>
@@ -234,10 +235,10 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap text-center  justify-center ">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-Gray">
+                <h2 className="text-4xl font-semibold text-Gray font-['Play']">
                   Our Community
                 </h2>
-                <p className="text-lg leading-relaxed m-4 mb-4 text-blueGray-500">
+                <p className="text-lg leading-relaxed m-4 mb-4 text-blueGray-500 font-['Play']">
                   A Community Built By StreetWear Fashion Lovers
                 </p>
               </div>
@@ -251,8 +252,8 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Kazi Mizan</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                    <h5 className="text-xl font-bold font-['Play']">Kazi Mizan</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold font-['Play']">
                       Designer
                     </p>
                     <div className="mt-6">
@@ -286,8 +287,8 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Romina Hadid</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                    <h5 className="text-xl font-bold font-['Play']">Romina Hadid</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold font-['Play']">
                       Stylist
                     </p>
                     <div className="mt-6">
@@ -315,8 +316,8 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Alexa Smith</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                    <h5 className="text-xl font-bold font-['Play']">Alexa Smith</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold font-['Play']">
                       NFT Expert
                     </p>
                     <div className="mt-6">
@@ -350,8 +351,8 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Jenna Kardi</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                    <h5 className="text-xl font-bold font-['Play']">Jenna Kardi</h5>
+                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold font-['Play']">
                       Founder and CEO
                     </p>
                     <div className="mt-6">
@@ -411,10 +412,10 @@ export default function Landing() {
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 pt-6 px-4">
-                <h2 className="text-4xl font-semibold text-white">
+                <h2 className="text-4xl font-semibold font-['Play'] text-white">
                   Your Membership is a Lifetime Asset
                 </h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
+                <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400 font-['Play']">
                   The world’s premier global NFT streetwear club. We are a
                   community built by fashion lovers, founded to celebrate the
                   authenticity and diversity of streetwear culture.
@@ -426,10 +427,10 @@ export default function Landing() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <FontAwesomeIcon icon="fas fa-users" />
                 </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
+                <h6 className="text-xl mt-5 font-semibold font-['Play'] text-white">
                   Community
                 </h6>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Become an insider everywhere. Join our invaluable community of
                   top street wear creators, producers, enthusiasts and
                   collectors.
@@ -439,10 +440,10 @@ export default function Landing() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <FontAwesomeIcon icon="fas fa-calendar" />
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold font-['Play'] text-white">
                   Experiences
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 font-['Play'] text-blueGray-400">
                   A one-time fee will give you lifetime access to unparalleled
                   streetwear experiences around the world. Your StreetVerse
                   membership NFT is a tradable asset.
@@ -452,10 +453,10 @@ export default function Landing() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <FontAwesomeIcon icon="fas fa-fingerprint" />
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold font-['Play'] text-white">
                   Access
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 font-['Play'] text-blueGray-400">
                   Purchase one of kind NFT merch drops directly from your
                   favorite streetwear brands.
                 </p>
@@ -463,75 +464,6 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        {/* <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-              <div className="w-full lg:w-6/12 px-4">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
-                  <div className="flex-auto p-5 lg:p-10">
-                    <h4 className="text-2xl font-semibold">
-                      Want to work with us?
-                    </h4>
-                    <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                      Complete this form and we will get back to you in 24
-                      hours.
-                    </p>
-                    <div className="relative w-full mb-3 mt-8">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="full-name"
-                      >
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        placeholder="Full Name"
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                        placeholder="Email"
-                      />
-                    </div>
-
-                    <div className="relative w-full mb-3">
-                      <label
-                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                        htmlFor="message"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        rows="4"
-                        cols="80"
-                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
-                        placeholder="Type a message..."
-                      />
-                    </div>
-                    <div className="text-center mt-6">
-                      <button
-                        className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
       </main>
     </>
   );

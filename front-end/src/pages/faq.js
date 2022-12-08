@@ -4,18 +4,18 @@ export default function Faq() {
   return (
     <section className="dark:bg-gray-800 dark:text-gray-100 mt-[80px] mb-[10px]">
       <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-        <h2 className="mb-12 text-4xl pt-[60px] font-bold leading-none text-center sm:text-5xl">
+        <h2 className="mb-12 text-4xl pt-[60px] font-['Play'] font-bold leading-none text-center sm:text-5xl">
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-          <p className="p-2 text-lg font-medium tracking-wider text-center uppercase">
+          <p className="p-2 text-lg font-medium font-['Play'] tracking-wider text-center uppercase">
             General
           </p>
           <details>
-            <summary className="py-2 font-bold  outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold font-['Play'] outline-none cursor-pointer focus:underline">
               What is StreetVerse?
             </summary>
-            <div className="px-4 pb-4">
+            <div className="px-4 pb-4 font-['Play']">
               <p>
                 StreetVerse is the world’s premier global NFT streetwear club.
                 We are a community built by fashion lovers, founded to celebrate
@@ -28,10 +28,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold font-['Play'] outline-none cursor-pointer focus:underline">
               What is a Non-fungible-Token (NFT)?
             </summary>
-            <div className="px-4 pb-4">
+            <div className="px-4 pb-4 font-['Play']">
               <p>
                 Think of two $100 bills. It doesn’t matter which one you use to
                 buy your designer shirt - the shop will take either, because
@@ -47,10 +47,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline font-['Play']">
               Are NFTs bad for the environment?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 StreetVerse is committed to employing the most environmentally
                 friendly blockchain technology. Currently, we are using the
@@ -73,10 +73,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Why use NFTs for StreetVerse?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 An NFT is a simple and automatically generated contract. It is
                 low cost, efficient, easily transferable, and fun. As an NFT,
@@ -88,10 +88,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               What is ETH and how do I get it?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 ETH (currency symbol Ξ) is the cryptocurrency of the Ethereum
                 blockchain. Cryptocurrencies are not available for purchase
@@ -106,10 +106,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               What is a wallet? Why do I need one?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 A crypto wallet is a secure virtual, well… wallet! It is
                 accessible online and facilitates the transactions of
@@ -128,10 +128,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Can I purchase it with US dollars via my credit/debit card?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 Our primary launch is in ETH, which means that you will need a
                 private crypto wallet to receive your membership token. We are
@@ -145,15 +145,15 @@ export default function Faq() {
       </div>
       <div className="h-[50px]"> </div>
       <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-        <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+        <div className="flex flex-col font-['Play'] divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
           <p className="p-2 text-lg font-medium tracking-wider text-center uppercase">
             Membership
           </p>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               How long does the membership last?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 Forever. As an NFT, all StreetVerse membership tokens are
                 tradable on the secondary market.
@@ -161,10 +161,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Why is it worth the money?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 As a StreetVerse member, you’ll have the keys to unlock a world
                 of unrivaled fashion experiences, exclusive access to the latest
@@ -175,19 +175,19 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Is there an age requirement to be a token holder?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p> Yes, all token holders must be at least 21 years of age.</p>
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Why do I need a wallet? Can't I just transfer money from my
               account from a crypto-exchange?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p className="pb-4">
                 {" "}
                 Your wallet will be the place where you store your membership
@@ -203,10 +203,10 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               What is the secondary market?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p className="pb-4">
                 Once a person purchases the original token from StreetVerse, all
                 future transactions happen on a secondary market, such as
@@ -222,11 +222,11 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               What happens if the wallet containing my NFTs is compromised or
               goes missing?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 {" "}
                 You’re safe with us. We understand that the world of blockchain
@@ -243,15 +243,15 @@ export default function Faq() {
       </div>
       <div className="h-[50px]"> </div>
       <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
-        <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+        <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700 font-['Play']">
           <p className="p-2 text-lg font-medium tracking-wider text-center uppercase">
             Acquisition of Events and Merch
           </p>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               Who am I buying from?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p>
                 Merchandise and Events sold on the StreetVerse platform to
                 members are offered directly from brands from which the members
@@ -260,12 +260,12 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold outline-none cursor-pointer font-['Play'] focus:underline">
               What are the steps for making a purchase?
             </summary>
-            <div className="px-4 pb-4 space-y-2">
+            <div className="px-4 pb-4 space-y-2 font-['Play']">
               <p> It's very easy! </p>
-              <ol className="list-decimal text-sm leading-5 font-serif pl-[40px]">
+              <ol className="list-decimal text-sm leading-5 pl-[40px] font-['Play']">
                 <li>You enter StreetVerse website and click ‘Events’.</li>
                 <li>You then click on the event you are interested in.</li>
                 <li>
@@ -290,7 +290,7 @@ export default function Faq() {
             </div>
           </details>
           <details>
-            <summary className="py-2 font-bold  outline-none cursor-pointer focus:underline">
+            <summary className="py-2 font-bold  outline-none cursor-pointer font-['Play'] focus:underline">
               Can I pay with credit card or crypto currency?
             </summary>
             <div className="px-4 pb-4 space-y-2">

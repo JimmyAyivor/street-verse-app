@@ -3,7 +3,7 @@ import React from 'react'
 export default function Privacy() {
   return (
 
-    <div class="p-40 ...">
+    <div class="p-40 ... font-['Play']">
       <h1 class=" text-center text-blueGray-700 font-bold underline text-4xl ... ">Privacy Policy</h1>
       <br></br>
       <p>Privacy is a fundamental right of every individual/entity. At StreetVerse, we strive to protect your privacy at all times, it’s at the very core of our ethos. We take it very seriously, and strongly feel you should too.</p>
