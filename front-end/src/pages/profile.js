@@ -1,9 +1,24 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 import Navbar from "../components/Navbars/AuthNavbar.js";
 import Footer from "../components/Footers/Footer.js";
+import axios from "axios";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const API = process.env.REACT_APP_API_URL;
 
 export default function Profile() {
+  const { id } = useParams()
+  const [user, setUser] = useState([])
+  
+  useEffect(() => {
+    axios.get(`${API}/users/${id}`)
+      .then(res => setUser(res.data.payload))
+    .catch(err => console.log(err))
+  }, [id])
+  console.log(user)
   return (
     <>
       <Navbar transparent />
@@ -85,7 +100,7 @@ export default function Profile() {
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          89
+                          89 
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Comments
@@ -96,30 +111,27 @@ export default function Profile() {
                 </div>
                 <div className="text-center mt-12">
                   <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    Jenna Stones
+                    {user.firstname} {user.lastname}
                   </h3>
                   <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                    <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
-                    Los Angeles, California
+                    <FontAwesomeIcon icon ="fas fa-map-marker-alt" className=" mr-2 text-lg text-blueGray-400"/>{" "}
+                    {user.city} {user.country}
+                    
                   </div>
                   <div className="mb-2 text-blueGray-600 mt-10">
-                    <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                    Solution Manager - Creative Tim Officer
+                    <FontAwesomeIcon icon="fas fa-briefcase" className=" mr-2 text-lg text-blueGray-400"/>
+                    {user.occupation}
                   </div>
                   <div className="mb-2 text-blueGray-600">
-                    <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                    University of Computer Science
+                    <FontAwesomeIcon icon="fas fa-university" className=" mr-2 text-lg text-blueGray-400" />
+                   University of Computer Science
                   </div>
                 </div>
-                <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+                <div className= "mt-10 py-10 border-t border-blueGray-200 text-center">
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        An artist of considerable range, Jenna the name taken by
-                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                        performs and records all of his own music, giving it a
-                        warm, intimate feel with a solid groove structure. An
-                        artist of considerable range.
+                        {user.bio}
                       </p>
                       <a
                         href="#pablo"

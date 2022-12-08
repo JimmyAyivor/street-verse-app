@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import CardMessage from "../Cards/CardMessage.js"
+import { useTitle } from "../../hooks/useTitle.js";
 // components
 const API = process.env.REACT_APP_API_URL;
 
 export default function CardMessages({ color, title }) {
  
-
+  useTitle("Member Messages | StretVerse ")
   const [messages, setMessages] = useState([]);
   useEffect(() => {
     axios

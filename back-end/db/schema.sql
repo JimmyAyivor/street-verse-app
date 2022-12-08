@@ -13,14 +13,14 @@ end;
 $$;
 create table if not exists users (
   id    serial primary key,
-  "uid"      text unique,
+  uid      text unique,
   wallet_id  char(42) unique not null,
-  username   text unique,
-  firstname  text not null,
-  lastame   text not null,
+  userName   text unique,
+  firstName  text not null,
+  lastName   text not null,
   img        text not null,
   email      text unique not null,
-  "address"  text,
+  address    text,
   city       text,
   country    text,
   postalCode int ,
@@ -31,7 +31,7 @@ create table if not exists users (
   instagram  text,
   google     text,
   website    text,
-  "status"   text not null default 'ACTIVE',
+  status     text not null default 'ACTIVE',
   roles      text not null default 'USER',
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
@@ -48,23 +48,23 @@ create trigger updated_at before update on users for each row execute procedure 
 
 
 create table if not exists events (
-  id    serial primary key,
-  title text not null,
+  id         serial primary key,
+  title      text not null,
   short_desc text not null,
-  thumbnail text not null,
-  "image" text not null,
-  long_desc text not null,
-  "date"     date not null,
-  "location" text not null,
+  thumbnail  text not null,
+  img        text not null,
+  long_desc  text not null,
+  date       date not null,
+  location   text not null,
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
 );
 
 create table if not exists messages (
   id          serial primary key,
-  fullname    text not null,
+  fullName    text not null,
   email       text not null,
-  "message"   text not null,
+  message     text not null,
   created_at  timestamp not null default now(),
   updated_at  timestamp not null default now()
 );

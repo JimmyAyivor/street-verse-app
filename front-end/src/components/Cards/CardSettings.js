@@ -1,11 +1,25 @@
-import React from "react";
 
-export default function CardSettings({
-  user,
+
+export default function CardSettings({user,
+ 
   handleSubmit,
   handleTextChange,
-  handleZipChange,
-}) {
+  handleZipChange}) {
+  
+  const {
+    username,
+    email,
+    firstname,
+    lastname,
+    address,
+    city,
+    country,
+    postalcode,
+    occupation,
+    img,
+    bio,
+  } = user
+
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
@@ -15,7 +29,7 @@ export default function CardSettings({
             <button
               onClick={handleSubmit}
               className="bg-blueGray-700 active:bg-blueGray-600 text-white font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
-              type="button"
+              type="submit"
             >
               Update
             </button>
@@ -37,7 +51,7 @@ export default function CardSettings({
                   </label>
                   <input
                     id="username"
-                    value={user.username}
+                    value={username}
                     type="text"
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     onChange={handleTextChange}
@@ -56,7 +70,7 @@ export default function CardSettings({
                   <input
                     type="email"
                     id="email"
-                    value={user.email}
+                    value={email}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="email@example.com"
@@ -73,8 +87,8 @@ export default function CardSettings({
                   </label>
                   <input
                     type="text"
-                    id="firstName"
-                    value={user.firstname}
+                    id="firstname"
+                    value={firstname}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="First Name"
@@ -91,8 +105,8 @@ export default function CardSettings({
                   </label>
                   <input
                     type="text"
-                    id="lastName"
-                    value={user.lastname}
+                    id="lastname"
+                    value={lastname}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="Last Name"
@@ -101,6 +115,31 @@ export default function CardSettings({
               </div>
             </div>
 
+            <hr className="mt-6 border-b-1 border-blueGray-300" />
+            <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+              Profile Picture
+            </h6>
+            <div className="flex flex-wrap">
+              <div className="w-full lg:w-12/12 px-4">
+                <div className="relative w-full mb-3">
+                  <label
+                    className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                    htmlFor="grid-password"
+                  >
+                    Url
+                  </label>
+                  <input
+                    type="text"
+                    id="img"
+                    value={img}
+                    onChange={handleTextChange}
+                    className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    placeholder="eg. "
+                  />
+                </div>
+              </div>
+
+            </div>
             <hr className="mt-6 border-b-1 border-blueGray-300" />
 
             <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
@@ -113,12 +152,12 @@ export default function CardSettings({
                     className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                     htmlFor="grid-password"
                   >
-                    Address
+                   Address
                   </label>
                   <input
                     type="text"
                     id="address"
-                    value={user.address}
+                    value={address}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
@@ -136,7 +175,7 @@ export default function CardSettings({
                   <input
                     type="text"
                     id="city"
-                    value={user.city}
+                    value={city}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="New York"
@@ -154,7 +193,7 @@ export default function CardSettings({
                   <input
                     type="text"
                     id="country"
-                    value={user.country}
+                    value={country}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="United States"
@@ -170,9 +209,9 @@ export default function CardSettings({
                     Postal Code
                   </label>
                   <input
-                    type="text"
-                    id="postalCode"
-                    value={user.postalCode}
+                    type="number"
+                    id="postalcode"
+                    value={postalcode}
                     onChange={handleZipChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="Postal Code"
@@ -198,7 +237,7 @@ export default function CardSettings({
                   <input
                     type="text"
                     id="occupation"
-                    value={user.occupation}
+                    value={occupation}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     placeholder="Solution Manager - At Example"
@@ -216,7 +255,7 @@ export default function CardSettings({
                   <textarea
                     type="text"
                     id="bio"
-                    value={user.bio}
+                    value={bio}
                     onChange={handleTextChange}
                     className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     rows="4"

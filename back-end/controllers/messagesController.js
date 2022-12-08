@@ -8,11 +8,6 @@ const {
   updateMessage,
 } = require("../queries/messages.js");
 
-// const {
-//   checkName,
-//   checkImage,
-//   checkHealth,
-// } = require("../validations/checkMessages.js");
 
 messages.get("/", async (req, res) => {
   const allMessages = await getAllMessages();
