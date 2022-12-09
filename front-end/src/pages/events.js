@@ -12,10 +12,10 @@ export default function Events() {
         >
           <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48relative rounded-xl z-30 p-5 text-white ">
             <div className="">
-              <h1 className="font-bold leading-none text-center text-white text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
+              <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
                 Events
               </h1>
-              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium text-center">
+              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-medium font-['Play'] text-yellow-200 text-center">
                 Get a sneak peek at our exciting members-only events, taking
                 place all over the world! Participate in the discussions on our
                 private Discord channels to request or suggest new events.
@@ -55,8 +55,8 @@ export default function Events() {
         <div className="container mx-auto px-4 ">
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
-              <h2 className="text-4xl font-semibold text-Gray">Events</h2>
-              <p className="text-2xl leading-relaxed mt-4 mb-4 text-Gray-900">
+              <h2 className="text-4xl font-semibold text-Gray font-['Play']">Events</h2>
+              <p className="text-2xl leading-relaxed mt-4 mb-4 text-Gray-900 font-['Play']">
                 Inside look at some upcoming events
               </p>
             </div>
@@ -74,20 +74,20 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   London
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
-                  <span className="leading-none uppercase">Sep</span>
+                  <span className="leading-none uppercase font-['Play']">Sep</span>
                 </div>
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   {" "}
                   London Fashion Week
@@ -104,20 +104,20 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   New York
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
-                  <span className="leading-none uppercase">Oct</span>
+                  <span className="leading-none uppercase font-['Play']">Oct</span>
                 </div>
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   New York Fashion Week
                 </p>
@@ -133,20 +133,20 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   Paris
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
-                  <span className="leading-none uppercase">Nov</span>
+                  <span className="leading-none uppercase font-['Play']">Nov</span>
                 </div>
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   Paris Fashion Week
                 </p>
@@ -159,10 +159,10 @@ export default function Events() {
         <div className="container mx-auto px-4 ">
           <div className="flex flex-wrap text-center justify-center">
             <div className="w-full lg:w-6/12 px-4">
-              <h2 className=" italic text-4xl font-semibold text-Gray">
+              <h2 className=" italic text-4xl font-semibold text-Gray font-['Play']">
                 Members Only
               </h2>
-              <p className="text-2xl leading-relaxed italic mt-4 mb-6 text-Gray-900">
+              <p className="text-2xl leading-relaxed italic mt-4 mb-6 text-Gray-900 font-['Play']">
                 Once-In-A-Lifetime Events
               </p>
             </div>
@@ -180,20 +180,20 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   Paris
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
-                  <span className="leading-none uppercase">Aug</span>
+                  <span className="leading-none uppercase font-['Play']">Aug</span>
                 </div>
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   {" "}
                   Supreme x Louis Vuitton Fashion Show
@@ -210,20 +210,20 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   London
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
-                  <span className="leading-none uppercase">Oct</span>
+                  <span className="leading-none uppercase font-['Play']">Oct</span>
                 </div>
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   Tour the famous Vogue house
                 </p>
@@ -239,12 +239,12 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   New York
-                </p>
+                </p> 
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
                   <span className="leading-none uppercase">Jul</span>
@@ -252,7 +252,7 @@ export default function Events() {
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   Meet one of streetwears most exciting desingers
                 </p>
@@ -267,12 +267,12 @@ export default function Events() {
               <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b via-transparent from-gray-900 to-gray-900"></div>
               <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
                 <p
-                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 "
+                  className="px-3 py-2 text-xs font-semibold tracking-wider uppercase text-gray-100 font-['Play']"
                 >
                   New York
                 </p>
                 <div className="flex flex-col justify-start text-center text-gray-100">
-                  <span className="text-3xl font-semibold leading-none tracking-wide">
+                  <span className="text-3xl font-semibold leading-none tracking-wide font-['Play']">
                     2023
                   </span>
                   <span className="leading-none uppercase">Jun</span>
@@ -280,7 +280,7 @@ export default function Events() {
               </div>
               <h2 className="z-10 p-5">
                 <p
-                  className="font-medium text-md hover:underline text-gray-100"
+                  className="font-medium text-md hover:underline text-gray-100 font-['Play']"
                 >
                   Polygon Ignite Nike .Swoosh Web3 event.
                 </p>

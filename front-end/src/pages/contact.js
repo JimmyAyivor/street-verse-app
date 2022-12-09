@@ -30,29 +30,7 @@ export default function Contact() {
   };
 
   console.log(contact)
-  //   const [status, setStatus] = useState("Submit");
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-  //     setStatus("Sending...");
-  //     const { name, email, message } = e.target.elements;
-  //     let details = {
-  //       name: name.value,
-  //       email: email.value,
-  //       message: message.value,
-  //     };
-  //     let response = await fetch("http://localhost:3000/contact", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json;charset=utf-8",
-  //       },
-  //       body: JSON.stringify(details),
-  //     });
-  //     setStatus("Submit");
-  //     let result = await response.json();
-  //     alert(result.status);
-  //   };
-
-  //test
+ 
   return (
     <>
       <main>
@@ -72,11 +50,11 @@ export default function Contact() {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">
+                <div className="pr-12 font-['Play']">
+                  <h1 className=" font-semibold text-5xl font-['Play'] text-yellow-500">
                     Contact us.
                   </h1>
-                  <p className="mt-4 text-lg text-blueGray-200">
+                  <p className="mt-4 text-lg font-['Play'] text-yellow-200">
                     Please reach out with any questions you may have. We are
                     available Monday - Friday, 9am - 5pm. If you do reach out
                     during off hours, then someone will respond to your message
@@ -131,10 +109,10 @@ export default function Contact() {
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-white">
+                <h2 className="text-4xl font-semibold font-['Play'] text-white">
                   Meet The Team!
                 </h2>
-                <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
+                <p className="text-lg leading-relaxed mt-4 mb-4 font-['Play'] text-white">
                   Meet the people who started this wonderful site!
                 </p>
               </div>
@@ -144,10 +122,10 @@ export default function Contact() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-medal text-xl"></i>
                 </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
+                <h6 className="text-xl mt-5 font-semibold text-white font-['Play'] ">
                   Jimmy Ayivor
                 </h6>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -156,10 +134,10 @@ export default function Contact() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F93626cdd-109d-4aa9-bf24-80e4fe0b3c9d%2FChristine_Taylor_.jpg?id=240fc021-5cf0-4617-970f-015ecee1ac44&table=block&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=a2a7df97-215e-4845-b533-9d989af7ce0a&cache=v2"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold text-white font-['Play']">
                   Christine Taylor
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -168,10 +146,10 @@ export default function Contact() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold text-white font-['Play']">
                   Jorge Carrera
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -180,10 +158,10 @@ export default function Contact() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold text-white font-['Play']">
                   Tajnique "T.K." Fuller
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -192,10 +170,10 @@ export default function Contact() {
                 <div className="text-blueGray-800 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
-                <h5 className="text-xl mt-5 font-semibold text-white">
+                <h5 className="text-xl mt-5 font-semibold text-white font-['Play']">
                   Dan Morales
                 </h5>
-                <p className="mt-2 mb-4 text-blueGray-400">
+                <p className="mt-2 mb-4 text-blueGray-400 font-['Play']">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
@@ -209,17 +187,17 @@ export default function Contact() {
               <div className="w-full lg:w-6/12 px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">
                   <div className="flex-auto p-5 lg:p-10">
-                    <h4 className="text-2xl font-semibold">
+                    <h4 className="text-2xl font-semibold font-['Play'] ">
                       Want to work with us?
                     </h4>
-                    <p className="leading-relaxed mt-1 mb-4 text-blueGray-500">
+                    <p className="leading-relaxed mt-1 mb-4 text-blueGray-500 font-['Play']">
                       Complete this form and we will get back to you in 24
                       hours.
                     </p>
                     <form onSubmit={handleSubmit}>
                       <div className="relative w-full mb-3 mt-8">
                         <label
-                          className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                          className="block uppercase text-blueGray-600 font-['Play'] text-xs font-bold mb-2"
                           htmlFor="full-name"
                         >
                           Full Name
@@ -237,7 +215,7 @@ export default function Contact() {
 
                       <div className="relative w-full mb-3">
                         <label
-                          className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                          className="block uppercase text-blueGray-600 font-['Play'] text-xs font-bold mb-2"
                           htmlFor="email"
                         >
                           Email
@@ -255,7 +233,7 @@ export default function Contact() {
 
                       <div className="relative w-full mb-3">
                         <label
-                          className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                          className="block uppercase text-blueGray-600 font-['Play'] text-xs font-bold mb-2"
                           htmlFor="message"
                         >
                           Message
@@ -273,7 +251,7 @@ export default function Contact() {
                       </div>
                       <div className="text-center mt-6">
                         <button
-                          className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          className="bg-blueGray-800 text-white active:bg-blueGray-600 font-['Play'] text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                           type="submit"
                         >
                           Send a Message

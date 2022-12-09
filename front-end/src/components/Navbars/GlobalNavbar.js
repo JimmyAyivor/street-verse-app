@@ -17,8 +17,8 @@ export default function Navbar(props) {
             >
               <img
                 alt="..."
-                src="/img/streetverselogo.jpg"
-                className="border-none mx-auto max-w-120-px"
+                src="/img/SVREDLOGO.png"
+                className="border-none mx-auto max-w-180-px"
               />
             </Link>
             <button
@@ -39,7 +39,7 @@ export default function Navbar(props) {
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="/about"
                   target="_self"
                 >
@@ -48,7 +48,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="/howitworks"
                   target="_self"
                 >
@@ -58,7 +58,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="/community"
                   target="_self"
                 >
@@ -68,7 +68,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="faq"
                   target="_self"
                 >
@@ -78,7 +78,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="events"
                   target="_self"
                 >
@@ -87,7 +87,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="auth/login"
                   target="_self"
                 >
@@ -96,7 +96,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="admin/dashboard"
                   target="_self"
                 >
