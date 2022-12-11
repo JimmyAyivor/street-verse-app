@@ -234,7 +234,7 @@ export default function membership() {
               <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
                 <img
                   src="https://images.unsplash.com/photo-1547975172-a7308ae8e16a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=520&w=361&q=80"
-                  alt="sunset photo of fashion forward teen"
+                  alt="fashion forward teen in the sunset"
                   className="mx-auto rounded-lg shadow-lg bg-gray0"
                 />
               </div>
@@ -365,7 +365,7 @@ export default function membership() {
               href="www.google.com"
               className="inline-flex items-center px-6 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
             >
-              <img className="h-9" src="/img/SVREDLOGO.png" />
+              <img className="h-9" src="/img/SVREDLOGO.png" alt="streetverse logo" />
               <span className="flex flex-col items-start ml-4 leading-none">
                 {/* <span className="mb-1 text-xs">GET IT ON</span> */}
                 <span className="font-semibold ">Mint My NFT</span>
@@ -376,7 +376,7 @@ export default function membership() {
               className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
             >
               <div>
-                <img className="h-9" src="/img/metamask.svg" />
+                <img className="h-9" src="/img/metamask.svg" alt="metamask" />
               </div>
               <span className="flex flex-col items-start ml-4 leading-none">
                 <span className="mb-1 text-xs">Dont have a wallet?</span>
