@@ -18,13 +18,9 @@ export default function Community() {
               </p>
             </div>
           </div>
-              
-          <video
-            autoPlay
-            loop
-            muted
-            className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-          >
+                        <div className="items-center flex flex-wrap">
+
+          <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
             <span
               id="blackOverlay"
               className="w-full h-full absolute opacity-75 bg-black"
@@ -32,6 +28,7 @@ export default function Community() {
             <source src="/img/MyMovie.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          </div>
         </div>
         <div className="container relative mx-auto">
           <div className="items-center flex flex-wrap">

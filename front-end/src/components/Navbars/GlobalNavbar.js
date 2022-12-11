@@ -17,7 +17,7 @@ export default function Navbar(props) {
             >
               <img
                 alt="..."
-                src="/img/SVREDLOGO.png"
+                src="/img/StreetVerselogo.png"
                 className="border-none mx-auto max-w-180-px"
               />
             </Link>
