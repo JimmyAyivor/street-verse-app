@@ -352,38 +352,41 @@ export default function membership() {
         </div>
 
         <div className="h-9 " />
-        
       </section>
+
       <section className="py-6  text-black">
         <div className="container mx-auto flex flex-col items-center justify-center p-8 space-y-8 md:p-10 md:px-24 xl:px-48">
           <h1 className="text-5xl font-bold leading-none text-center">
             Join Now
           </h1>
+        </div>
 
-          <div className="flex items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
-            <a
-              href="www.google.com"
-              className="inline-flex items-center px-6 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
-            >
-              <img className="h-9" src="/img/SVREDLOGO.png" alt="streetverse logo" />
-              <span className="flex flex-col items-start ml-4 leading-none">
-                {/* <span className="mb-1 text-xs">GET IT ON</span> */}
-                <span className="font-semibold ">Mint My NFT</span>
-              </span>
-            </a>
-            <a
-              href="https://metamask.io/"
-              className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
-            >
-              <div>
-                <img className="h-9" src="/img/metamask.svg" alt="metamask" />
-              </div>
-              <span className="flex flex-col items-start ml-4 leading-none">
-                <span className="mb-1 text-xs">Dont have a wallet?</span>
-                <span className="font-semibold ">Get Metamask</span>
-              </span>
-            </a>
-          </div>
+        <div className="mt-6 flex flex-shrink-0 flex-col items-center justify-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 sm:ml-4 sm:mt-4 mb-6">
+          <a
+            href="https://streetverse-nft-mint.netlify.app/"
+            className="inline-flex items-center px-6 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
+          >
+            <img
+              className="h-9"
+              src="/img/SVREDLOGO.png"
+              alt="streetverse logo"
+            />
+            <span className="flex flex-col items-start ml-4 leading-none">
+              <span className="font-semibold">Mint My NFT</span>
+            </span>
+          </a>
+          <a
+            href="https://metamask.io/"
+            className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
+          >
+            <div>
+              <img className="h-9" src="/img/metamask.svg" alt="metamask" />
+            </div>
+            <span className="flex flex-col items-start ml-4 leading-none">
+              <span className="mb-1 text-xs">Dont have a wallet?</span>
+              <span className="font-semibold ">Get Metamask</span>
+            </span>
+          </a>
         </div>
       </section>
     </>
