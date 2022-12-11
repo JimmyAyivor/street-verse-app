@@ -120,7 +120,7 @@ export default function membership() {
             <div aria-hidden="true" className="mt-10 lg:mt-0">
               <img
                 src="https://images.unsplash.com/photo-1645516484419-35a747c99474?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=520&w=361&q=80"
-                alt=""
+                alt="ethereum"
                 className="mx-auto rounded-lg shadow-lg bg-gray0"
               />
             </div>
@@ -234,7 +234,7 @@ export default function membership() {
               <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
                 <img
                   src="https://images.unsplash.com/photo-1547975172-a7308ae8e16a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=520&w=361&q=80"
-                  alt=""
+                  alt="sunset photo of fashion forward teen"
                   className="mx-auto rounded-lg shadow-lg bg-gray0"
                 />
               </div>
@@ -344,7 +344,7 @@ export default function membership() {
             <div aria-hidden="true" className="mt-10 lg:mt-0">
               <img
                 src="https://images.unsplash.com/photo-1557777586-f6682739fcf3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMGRlc2lnbmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&h=520&w=361&q=60"
-                alt=""
+                alt=" designer drawings"
                 className="mx-auto rounded-lg shadow-lg bg-gray0"
               />
             </div>
@@ -352,36 +352,38 @@ export default function membership() {
         </div>
 
         <div className="h-9 " />
+        
       </section>
       <section className="py-6  text-black">
         <div className="container mx-auto flex flex-col items-center justify-center p-8 space-y-8 md:p-10 md:px-24 xl:px-48">
           <h1 className="text-5xl font-bold leading-none text-center">
             Join Now
           </h1>
-        </div>
-        <div className="flex items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
-          <a
-            href=""
-            className="inline-flex items-center px-6 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
-          >
-            <img className="h-9" src="/img/SVREDLOGO.png" />
-            <span className="flex flex-col items-start ml-4 leading-none">
-              {/* <span className="mb-1 text-xs">GET IT ON</span> */}
-              <span className="font-semibold ">Mint My NFT</span>
-            </span>
-          </a>
-          <a
-            href="https://metamask.io/"
-            className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
-          >
-            <div>
-              <img className="h-9" src="/img/metamask.svg" />
-            </div>
-            <span className="flex flex-col items-start ml-4 leading-none">
-              <span className="mb-1 text-xs">Dont have a wallet?</span>
-              <span className="font-semibold ">Get Metamask</span>
-            </span>
-          </a>
+
+          <div className="flex items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
+            <a
+              href="www.google.com"
+              className="inline-flex items-center px-6 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
+            >
+              <img className="h-9" src="/img/SVREDLOGO.png" />
+              <span className="flex flex-col items-start ml-4 leading-none">
+                {/* <span className="mb-1 text-xs">GET IT ON</span> */}
+                <span className="font-semibold ">Mint My NFT</span>
+              </span>
+            </a>
+            <a
+              href="https://metamask.io/"
+              className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
+            >
+              <div>
+                <img className="h-9" src="/img/metamask.svg" />
+              </div>
+              <span className="flex flex-col items-start ml-4 leading-none">
+                <span className="mb-1 text-xs">Dont have a wallet?</span>
+                <span className="font-semibold ">Get Metamask</span>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
     </>
