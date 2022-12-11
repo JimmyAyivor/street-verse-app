@@ -37,22 +37,14 @@ export default function Navbar(props) {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+
               <li className="flex items-center">
                 <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="/about"
+                  to="events"
                   target="_self"
                 >
-                  About
-                </Link>{" "}
-              </li>
-              <li className="flex items-center">
-                <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="/howitworks"
-                  target="_self"
-                >
-                  How It Works
+                  Events
                 </Link>
               </li>
 
@@ -69,6 +61,16 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  to="/membership"
+                  target="_self"
+                >
+                  Membership
+                </Link>
+              </li>
+
+              <li className="flex items-center">
+                <Link
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="faq"
                   target="_self"
                 >
@@ -79,12 +81,25 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="events"
+                  to="/about"
                   target="_self"
                 >
-                  Events
-                </Link>
+                  About
+                </Link>{" "}
+
+
               </li>
+
+              {/* <li className="flex items-center">
+                <Link
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  to="/howitworks"
+                  target="_self"
+                >
+                  How It Works
+                </Link>
+              </li> */}
+
               <li className="flex items-center">
                 <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -94,6 +109,7 @@ export default function Navbar(props) {
                   Sign in
                 </Link>
               </li>
+              
               <li className="flex items-center">
                 <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
