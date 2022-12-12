@@ -5,12 +5,12 @@ export default function membership() {
     <>
       <section className=" text-black mt-36">
         <div className="container max-w-auto p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
-        <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-yellow-500 bg-opacity-50 rounded-xl">
+        <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-blueGray-200	 bg-opacity-50 rounded-xl">
 
-            <h2 className="text-5xl font-['Play'] text-gray-800 text-[42px] uppercase font-bold tracking-tight text-center sm:text-5xl">
+            <h2 className="text-5xl font-['Play'] text-gray-800 text-[32px] uppercase font-bold tracking-tight text-center sm:text-5xl">
               M e m b e r s h i p
             </h2>
-            <p className="max-w-3xl mx-auto mt-4 text-[30px] font-['Play'] text-center text-gray-600">
+            <p className="max-w-3xl mx-auto mt-1 text-[30px] font-['Play'] text-center text-gray-600">
               Your StreetVerse journey starts here!
             </p>
           </div>

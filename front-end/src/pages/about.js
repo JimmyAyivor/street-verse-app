@@ -7,10 +7,10 @@ export default function About() {
 
             <div
           className="relative flex items-center justify-center h-screen mb-20
-         overflow-hidden"
-        >
+         overflow-hidden">
+        
           <div className=" container object-cover h-48 w-96 text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 text-white bg-blueGray-500 bg-opacity-50 rounded-xl">
-            <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">>
+            <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">
               <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
                About Us
               </h1>
