@@ -31,7 +31,6 @@ StreetVerse is the world’s premier global NFT streetwear club. We are a commun
               className="w-full h-full absolute opacity-75 bg-blueGray-500"
             ></span>
             <source src="/img/AboutUs2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
 
             <span
