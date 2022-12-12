@@ -85,16 +85,15 @@ function App() {
               <Route path="/user/community" element={<UserCommunity />} />
               <Route path="/user/events" element={<UserEvents />} />
               <Route path="/user/messages" element={<Messages />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/event/:id" element={<EventShow />} />
+              <Route path="/profile/:id" element={<Profile />} />
             </Route>
           </Route>
 
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
           <Route path='/auth/reset' element={<Reset />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/event/:id" element={<EventShow />} />
-
-          <Route path="/profile/:id" element={<Profile />} />
 
           <Route path="*" element={<FourOFour />} />
         </Routes>
