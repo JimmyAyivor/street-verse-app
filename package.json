@@ -17,10 +17,5 @@
     "url": "https://github.com/JimmyAyivor/street-verse-app/issues"
   },
   "homepage": "https://github.com/JimmyAyivor/street-verse-app#readme",
-  "dependencies": {
-    "@trendyol-js/react-carousel": "^3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "swiper": "^8.4.5"
-  }
+
 }

@@ -10,7 +10,7 @@ export default function membership() {
             <h2 className="text-5xl font-['Play'] text-gray-800 text-[42px] uppercase font-bold tracking-tight text-center sm:text-5xl">
               M e m b e r s h i p
             </h2>
-            <p className="max-w-3xl mx-auto mt-4 text-[30px] font-['Play'] text-center text-gray-500">
+            <p className="max-w-3xl mx-auto mt-4 text-[30px] font-['Play'] text-center text-gray-500 ">
               Your StreetVerse journey starts here!
             </p>
           </div>
@@ -19,7 +19,7 @@ export default function membership() {
               <h3 className="text-[28px] font-['Play'] underline font-bold tracking-tight sm:text-3xl text-black">
                 NFT's & Web3
               </h3>
-              <p className="mt-3 text-[20px] font-['Play'] text-gray-500">
+              <p className="mt-3 text-[20px] font-['Play'] text-gray-500 ">
                 Your keys to the StreetVerse
               </p>
               <div className="mt-12 space-y-12">
@@ -46,7 +46,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       What is an NFT?
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       Think of two $100 bills. It doesn’t matter which one you
                       use to buy your designer shirt - the shop will take
                       either, because they are interchangeable. That’s what
@@ -80,7 +80,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       What does an NFT do on this website?
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       Your NFT will be your unique and personal ticket to unlock
                       all the benefits of the StreetVerse.
                     </p>
@@ -109,7 +109,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       Benefits of Web3
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       Web3 Wallets are free to use, easy to set up and, perhaps
                       most importantly - due to being decentralized and on the
                       blockchain - completely anonymous
@@ -132,7 +132,7 @@ export default function membership() {
                 <h3 className="text-[28px] font-['Play'] underline font-bold tracking-tight sm:text-3xl text-black">
                   Member Benefits
                 </h3>
-                <p className="mt-3 text-lg text-[20px] font-['Play'] text-gray-500">
+                <p className="mt-3 text-lg text-[20px] font-['Play'] text-gray-500 ">
                   Join us and celebrate the legacy of streetwear as it enters a
                   new era and takes its place in the metaverse.
                 </p>
@@ -160,7 +160,7 @@ export default function membership() {
                       <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                         Unrivalled Fashion Experiences
                       </h4>
-                      <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                      <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                         Join the who’s who of the fashion scene at specially
                         curated member events. From quarterly merch drops and
                         pop up shops in Paris, London, NYC, LA, HK, to
@@ -223,7 +223,7 @@ export default function membership() {
                       <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                         Community
                       </h4>
-                      <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                      <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                         Join our unique global community and share in the
                         passion for streetwear with fashion lovers, enthusiasts
                         and insiders that you cant find anywhere else.
@@ -246,7 +246,7 @@ export default function membership() {
               <h3 className="text-[28px] font-['Play'] underline font-bold tracking-tight sm:text-3xl text-black">
                 Admin Benefits
               </h3>
-              <p className="mt-3 text-[20px] font-['Play'] text-gray-500">
+              <p className="mt-3 text-[20px] font-['Play'] text-gray-500 ">
                 Your brand meets the Metaverse
               </p>
               <div className="mt-12 space-y-12">
@@ -273,7 +273,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       Curate your community
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       Admin NFT's grant you all the power of web3 and
                       StreetVerse to create your own brand community.
                     </p>
@@ -302,7 +302,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       Grow your brand
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       Leverage the cutting edge technology of web3, already in
                       use by the biggest names in the fashion industry, to grow
                       your brand and community in tandem.
@@ -332,7 +332,7 @@ export default function membership() {
                     <h4 className="text-[28px] font-['Play'] underline font-medium leading-6 text-black">
                       Exlcusivity fuels desirability
                     </h4>
-                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500">
+                    <p className="mt-2 text-[20px] font-['Play'] text-gray-500 ">
                       As and Admin you can release your own merch and curate
                       your own events to your own exclusive community, instantly
                       fueling the desirability of your designs and increasing

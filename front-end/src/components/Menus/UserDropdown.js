@@ -3,6 +3,7 @@ import { createPopper } from "@popperjs/core";
 import { Link,useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logout } from "../../pages/firebase"
+import useUserWallet from "../../hooks/useUserWallet";
 // layout for page
 
 
@@ -86,9 +87,12 @@ let user = useAuthState(auth)
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Connect Wallet
+          
+          Messages
         </Link>
-        <div></div>
+        <div className="h-0 my-2 border border-solid border-blueGray-100" />
+
+        <div>{useUserWallet()}</div>
         
         
         
@@ -103,6 +107,7 @@ let user = useAuthState(auth)
         >
           LogOut
         </Link>
+        
       </div>
     </>
   );
