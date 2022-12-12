@@ -12,7 +12,7 @@ const CardCommunity = ({user}) => {
 
 
         ">
-            <div className="px-6 mb-8">
+            <div className=" mb-4 border-1 rounded border-solid bg-white p-2 height=[400px] width=[200px]">
                 <Link to= { `/profile/${id}`}>
                 <img
                     alt="..."
@@ -22,7 +22,7 @@ const CardCommunity = ({user}) => {
                 </Link>
                 <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">{firstname} {lastname}</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
+                    <p className="mt-1 text-sm text-blueGray-400  font-semibold">
                         {occupation}
                     </p>
                     <div className="mt-3">

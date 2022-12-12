@@ -21,8 +21,7 @@ export default function Profile() {
 
   return (
     <>
-      <Navbar transparent />
-      <main className="profile-page">
+      <main className="profile-page mt-40">
         <section className="relative block h-500-px">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
