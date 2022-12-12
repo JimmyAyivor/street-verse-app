@@ -1,8 +1,28 @@
 import React from "react";
 import { createPopper } from "@popperjs/core";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, logout } from "../../pages/firebase"
+// layout for page
+
 
 const UserDropdown = () => {
+let user = useAuthState(auth)
+
+  // console.log(user[0].photoURL );
+  const navigate = useNavigate()
+  const handleLogout = async () => {
+    try {
+      //handleClose();
+      await logout();
+      navigate("/auth/login");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+
+
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
@@ -32,7 +52,7 @@ const UserDropdown = () => {
             <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src="/img/team-1-800x800.jpg"
+              src={user[0]?.photoURL || "/img/team-1-800x800.jpg"  }
             />
           </span>
         </div>
@@ -66,15 +86,20 @@ const UserDropdown = () => {
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
         >
-          Messages
+          Connect Wallet
         </Link>
+        <div></div>
+        
+        
+        
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
         <Link
-          to="#pablo"
+          
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-          onClick={(e) => e.preventDefault()}
+          onClick={(e) => handleLogout()}
+
         >
           LogOut
         </Link>

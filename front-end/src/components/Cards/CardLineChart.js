@@ -56,7 +56,7 @@ export default function CardLineChart() {
           intersect: true,
         },
         scales: {
-          xAxes: [
+          x:[
             {
               ticks: {
                 fontColor: "rgba(255,255,255,.7)",
@@ -78,7 +78,7 @@ export default function CardLineChart() {
               },
             },
           ],
-          yAxes: [
+          y:[
             {
               ticks: {
                 fontColor: "rgba(255,255,255,.7)",

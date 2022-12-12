@@ -1,10 +1,61 @@
-import React from "react";
-
-// components
-
+import React, { useEffect, useState } from "react";
 import CardStats from "../Cards/CardStats";
 
+import axios from "axios";
+const API = process.env.REACT_APP_API_URL
+
 export default function HeaderStats() {
+  const [users, setUsers] = useState([]);
+  const [events, setEvents] = useState([]);
+  const [messages, setMessages] = useState([]);
+  const totalUsers = users && users.length * 10;
+  const totalEvents = events && events.length * 10;
+  const totalMessages = messages && messages.length * 10;
+
+  useEffect(() => {
+    axios
+      .get(`${API}/users`)
+      .then((response) => {
+        setUsers(response.data.payload);
+
+      })
+      .catch((error) => {
+
+        console.error(error);
+      });
+  }, [users]);
+
+  useEffect(() => {
+
+    axios
+      .get(`${API}/events`)
+      .then((response) => {
+        setEvents(response.data.payload);
+
+      })
+      .catch((error) => {
+
+        console.error(error);
+      });
+  }, [events]);
+
+  useEffect(() => {
+
+    axios
+      .get(`${API}/messages`)
+      .then((response) => {
+        setMessages(response.data.payload);
+
+      })
+      .catch((error) => {
+
+        console.error(error);
+      });
+  }, [messages]);
+
+
+
+
   return (
     <>
       {/* Header */}
@@ -16,7 +67,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="USERS"
-                  statTitle="350,897"
+                  statTitle={totalUsers.toString()}
                   statArrow="up"
                   statPercent="3.48"
                   statPercentColor="text-emerald-500"
@@ -28,7 +79,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="EVENTS"
-                  statTitle="2,356"
+                  statTitle={totalEvents.toString()}
                   statArrow="down"
                   statPercent="3.48"
                   statPercentColor="text-red-500"
@@ -40,7 +91,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="MESSAGES"
-                  statTitle="924"
+                  statTitle={totalMessages.toString()}
                   statArrow="down"
                   statPercent="1.10"
                   statPercentColor="text-orange-500"
@@ -52,7 +103,7 @@ export default function HeaderStats() {
               <div className="w-full lg:w-6/12 xl:w-3/12 px-4">
                 <CardStats
                   statSubtitle="MEMBERSHIPS"
-                  statTitle="49,65%"
+                  statTitle="65%"
                   statArrow="up"
                   statPercent="12"
                   statPercentColor="text-emerald-500"

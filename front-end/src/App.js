@@ -1,12 +1,7 @@
-import {  Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route, Outlet} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter} from "@fortawesome/free-brands-svg-icons";
-
-
-import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS,  faSearch,  faTable,  faTimes,  faTv,  faUniversity,  faUserFriends, faUserPlus, faUsers} from "@fortawesome/free-solid-svg-icons";
-
-
-
+import { fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS, faSearch, faTable, faTimes, faTv, faUniversity, faUserFriends, faUserPlus, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/tailwind.css";
 
@@ -39,14 +34,19 @@ import TermsAndConditions from "./pages/terms";
 import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
 import FourOFour from "./pages/fourOfour";
+import Reset from "./pages/auth/reset"
 import EventShow from "./pages/eventShow";
+import PrivateOutlet from "./privateRoute";
+
+library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity, faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical, faEllipsisV, faUsers, faComments, faUserPlus, faSearch, faArrowDown, faArrowUp, faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable);
 
 
-
-library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity,  faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical,faEllipsisV,faUsers,faComments,faUserPlus,faSearch,faArrowDown,faArrowUp,faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable);
 
 
 function App() {
+ 
+ 
+
 
 
   return (
@@ -65,28 +65,32 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
           </Route>
 
-          <Route path="/" element={<LayoutsAdminNavbar />}>
-            <Route path="/admin/dashboard" element={<Dashboard />} />
-            <Route path="/admin/settings" element={<Settings />} />
-            <Route path="/admin/tables" element={<Tables />} />
-            <Route path="/admin/users" element={<Users />} />
-            <Route path="/admin/events" element={<AdminEvents />} />
-            <Route path="/admin/messages" element={<Messages />} />
-          </Route>
 
-          <Route path="/" element={<LayoutsUserNavbar />}>
-            <Route path="/user/dashboard" element={<UserDashboard />} />
-            <Route path="/user/settings" element={<Settings />} />
-            <Route path="/user/community" element={<UserCommunity />} />
-            <Route path="/user/events" element={<UserEvents />} />
-            <Route path="/user/messages" element={<Messages />} />
+          <Route path="/" element={<PrivateOutlet />}>
+            <Route path="/" element={<LayoutsAdminNavbar />}>
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/settings" element={<Settings />} />
+              <Route path="/admin/tables" element={<Tables />} />
+              <Route path="/admin/users" element={<Users />} />
+              <Route path="/admin/events" element={<AdminEvents />} />
+              <Route path="/admin/messages" element={<Messages />} />
+            </Route>
+          </Route>
+          <Route path="/" element={<PrivateOutlet />}>
+            <Route path="/" element={<LayoutsUserNavbar />}>
+              <Route path="/user/dashboard" element={<UserDashboard />} />
+              <Route path="/user/settings" element={<Settings />} />
+              <Route path="/user/community" element={<UserCommunity />} />
+              <Route path="/user/events" element={<UserEvents />} />
+              <Route path="/user/messages" element={<Messages />} />
+            </Route>
           </Route>
 
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
-
+          <Route path='/auth/reset' element={<Reset />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/event/:id" element={<EventShow /> }/>
+          <Route path="/event/:id" element={<EventShow />} />
 
           <Route path="/profile/:id" element={<Profile />} />
 

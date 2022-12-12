@@ -116,12 +116,14 @@ export default function CardMessages({ color, title }) {
 
               {users[0]?users.map((user) => {
                 return <CardUser key={user.id} id={user.id} User={user} color = {color}/>;
-              }):<tr><td className={
-                "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left " +
+              }):<tr>
+              <td align="center" colSpan="6"><p className={
+                "px-6  text-center border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold  " +
                 (color === "light"
                   ? " text-blueGray-500 border-blueGray-100"
                   : " text-blueGray-200 border-blueGray-500")
-              }>No User Found!</td></tr>}
+              }>No User Found!</p></td>
+            </tr>}
             </tbody>
           </table>
           </ol>

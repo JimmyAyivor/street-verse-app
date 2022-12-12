@@ -1,11 +1,34 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from "react";
+import { Link, useNavigate } from "react-router-dom";
+import {auth, logInWithEmailAndPassword, signInWithGoogle} from '../firebase'
+import {useAuthState} from 'react-firebase-hooks/auth'
 
 // layout for page
-
 import Auth from "../../layouts/Auth";
 
+
 export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useNavigate()
+ 
+  useEffect(() => {
+    if (loading) {
+      // maybe trigger a loading screen
+      return;
+    }
+    if (user){
+      console.log(user.displayName);
+      navigate('/user/settings')
+    } 
+    
+  }, [user, loading,error,navigate]);
+  
+
+
+
+  
   return (
     <>
       <Auth>
@@ -21,15 +44,9 @@ export default function Login() {
                   </div>
                   <div className="btn-wrapper text-center">
                     <button
-                      className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      <img alt="..." className="w-5 mr-1" src="/img/github.svg" />
-                      Github
-                    </button>
-                    <button
                       className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
                       type="button"
+                      onClick={signInWithGoogle}
                     >
                       <img alt="..." className="w-5 mr-1" src="/img/google.svg" />
                       Google
@@ -47,10 +64,13 @@ export default function Login() {
                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                         htmlFor="grid-password"
                       >
+                        
                         Email
                       </label>
                       <input
-                        type="email"
+                        type="text"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                         placeholder="Email"
                       />
@@ -65,7 +85,9 @@ export default function Login() {
                       </label>
                       <input
                         type="password"
+                        value={password}
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                        onChange={(e) =>setPassword(e.target.value)}
                         placeholder="Password"
                       />
                     </div>
@@ -86,6 +108,7 @@ export default function Login() {
                       <button
                         className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                         type="button"
+                        onClick={() =>logInWithEmailAndPassword(email, password)}
                       >
                         Sign In
                       </button>
@@ -95,13 +118,13 @@ export default function Login() {
               </div>
               <div className="flex flex-wrap mt-6 relative">
                 <div className="w-1/2">
-                  <a
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                    className="text-blueGray-200"
-                  >
+                  <Link to="/auth/reset" className="text-blueGray-200">
+
+                
+                
                     <small>Forgot password?</small>
-                  </a>
+                    </Link>
+              
                 </div>
                 <div className="w-1/2 text-right">
                   <Link to="/auth/register" className="text-blueGray-200">

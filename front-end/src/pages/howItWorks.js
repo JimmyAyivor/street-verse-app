@@ -55,10 +55,10 @@ export default function HowItWorks() {
           style={{ transform: "translateZ(0)" }}
         >
 
-          <polygon
+          <p
             className="text-white fill-current"
             points="2560 0 2560 100 0 100"
-          ></polygon>
+          ></p>
 
         </div>
 
@@ -95,14 +95,14 @@ export default function HowItWorks() {
                   <div className="px-4 py-5 flex-auto">
                   <a
                       href="/contact"
-                      class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
+                      className="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
                     ><div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                       <FontAwesomeIcon icon="fa-solid fa-phone" />
                     </div></a>
 
                     <a
                       href="/contact"
-                      class="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
+                      className="text-blue-600 hover:text-blue-700 underline transition duration-300 ease-in-out mb-4"
                     >
                       <h6 className="text-xl font-semibold font-['Play']">Contact Us</h6>
                     </a><p className="text- font-semibold font-['Play']"> Should you have any questions you can reach us here:</p>
@@ -124,7 +124,7 @@ export default function HowItWorks() {
                 <img alt="..." className="rounded-xl shadow-xl opacity-100 brightness-50 "
                   src="https://www.essence.com/wp-content/uploads/2016/03/images/2016/03/07/gettyimages-513914516_master.jpg" />
               </div>
-              <div class="absolute text-2xl top-1/2 left-1/2
+              <div className="absolute text-2xl top-1/2 left-1/2
                    -translate-x-1/2 -translate-y-1/2">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-15 h-15 mb-5 shadow-lg rounded-full bg-blue-400">
                   <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
@@ -171,7 +171,7 @@ export default function HowItWorks() {
                   src="https://d1e00ek4ebabms.cloudfront.net/production/8b88f4e2-2cf9-4088-96d7-f97b007abf79.jpg?source=next&fit=scale-down&quality=highest&width=1067&dpr=1" />
               </div>
 
-              <div class="absolute text-4xl top-1/2 left-1/2
+              <div className="absolute text-4xl top-1/2 left-1/2
                    -translate-x-1/2 -translate-y-1/2">
                 <div className="text-white p-3 text-center inline-flex items-center justify-center w-15 h-15 mb-5 shadow-lg rounded-full bg-red-400">
                   <FontAwesomeIcon icon="fa-solid fa-circle-nodes" />

@@ -57,7 +57,7 @@ export default function CardBarChart() {
           position: "bottom",
         },
         scales: {
-          xAxes: [
+          x: [
             {
               display: false,
               scaleLabel: {
@@ -74,7 +74,7 @@ export default function CardBarChart() {
               },
             },
           ],
-          yAxes: [
+          y: [
             {
               display: true,
               scaleLabel: {

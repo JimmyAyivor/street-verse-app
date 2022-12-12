@@ -1,27 +1,67 @@
-import { createContext, useReducer } from "react";
-export const AuthContext = createContext()
+import React, { useContext, useState, useEffect } from "react"
+import { auth } from "../pages/firebase"
 
-export const authReducer = (state, action) => {
-    switch (action.type) {
-        case 'LOGIN':
-            return { user: action.payload }
-        case 'LOGOUT':
-            return { user: null }
-        default:
-            return state
-    }
+const AuthContext = React.createContext()
+
+export function useAuth() {
+  return useContext(AuthContext)
 }
 
-export const AuthContextProvider = ({ children }) => {
-    const [state, dispatch] = useReducer(authReducer, {
-        user: null
+export function AuthProvider({ children }) {
+  const [currentUser, setCurrentUser] = useState()
+  const [loading, setLoading] = useState(true)
+
+  function signInWithGoogle (){
+    return auth.signInWithGoogle()
+  }
+  
+  function signup(email, password) {
+    return auth.createUserWithEmailAndPassword(email, password)
+  }
+console.log("CURRENT USER", currentUser);
+  function login(email, password) {
+    return auth.signInWithEmailAndPassword(email, password)
+  }
+
+  function logout() {
+    return auth.signOut()
+  }
+
+  function resetPassword(email) {
+    return auth.sendPasswordResetEmail(email)
+  }
+
+  function updateEmail(email) {
+    return currentUser.updateEmail(email)
+  }
+
+  function updatePassword(password) {
+    return currentUser.updatePassword(password)
+  }
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      setCurrentUser(user)
+      setLoading(false)
     })
 
-    console.log('AuthContext state:', state);
+    return unsubscribe
+  }, [])
 
-    return (
-        <AuthContext.Provider value={{ ...state, dispatch }}>
-            {children}
-        </AuthContext.Provider>
-    )
+  const value = {
+    currentUser,
+    login,
+    signup,
+    logout,
+    updateEmail,
+    resetPassword,
+    updatePassword,
+    signInWithGoogle
+  }
+
+  return (
+    <AuthContext.Provider value={value}>
+      {!loading && children}
+    </AuthContext.Provider>
+  )
 }

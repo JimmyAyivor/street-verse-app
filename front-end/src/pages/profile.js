@@ -18,7 +18,7 @@ export default function Profile() {
       .then(res => setUser(res.data.payload))
     .catch(err => console.log(err))
   }, [id])
-  console.log(user)
+
   return (
     <>
       <Navbar transparent />

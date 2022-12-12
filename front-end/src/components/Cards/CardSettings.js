@@ -7,6 +7,7 @@ export default function CardSettings({
   handleZipChange,
 }) {
 
+  
 
   const { username, firstname, lastname, email,address,city,country,occupation, img, bio } = user;
 
