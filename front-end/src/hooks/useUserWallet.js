@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
 export default function useUserWallet() {
@@ -76,7 +77,7 @@ export default function useUserWallet() {
                         0,
                         6
                     )}...${walletAddress.substring(38)}`
-                    : <p className="text-blueGray-500">Connect Wallet</p>}
+                    : <p className="text-blueGray-500"><FontAwesomeIcon icon="fa-solid fa-wallet" />Connect Wallet</p>}
             </span>
         </button>
 

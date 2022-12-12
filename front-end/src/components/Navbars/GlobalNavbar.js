@@ -91,13 +91,14 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center">
-                <Link
+                
+                {  <Link
                   className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   to="auth/login"
                   target="_self"
                 >
                   Sign in
-                </Link>
+                </Link>}
               </li>
             </ul>
           </div>

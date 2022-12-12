@@ -1,7 +1,7 @@
 import { Routes, Route, Outlet} from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS, faSearch, faTable, faTimes, faTv, faUniversity, faUserFriends, faUserPlus, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComment, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faGear, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS, faSearch, faSignOutAlt, faTable, faTimes, faTv, faUniversity, faUser, faUserFriends, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles/tailwind.css";
 
@@ -39,7 +39,7 @@ import Reset from "./pages/auth/reset"
 import EventShow from "./pages/eventShow";
 import PrivateOutlet from "./privateRoute";
 
-library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity, faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical, faEllipsisV, faUsers, faComments, faUserPlus, faSearch, faArrowDown, faArrowUp, faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable);
+library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity, faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical, faEllipsisV, faUsers, faComments, faUserPlus, faSearch,faUser,faGear,faSignOutAlt, faComment, faArrowDown, faArrowUp, faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable,faWallet);
 
 
 

@@ -379,6 +379,7 @@ export default function membership() {
           <a
             href="https://metamask.io/"
             className="inline-flex items-center px-5 py-3 rounded-lg outline outline-2 outline-red-600 text-black"
+          target="_blank" rel="noreferrer"
           >
             <div>
               <img className="h-9" src="/img/metamask.svg" alt="metamask" />

@@ -4,6 +4,7 @@ import { Link,useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, logout } from "../../pages/firebase"
 import useUserWallet from "../../hooks/useUserWallet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // layout for page
 
 
@@ -70,7 +71,7 @@ let user = useAuthState(auth)
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-        >
+        ><FontAwesomeIcon icon="fa-solid fa-user" />{' '}
           Profile
         </Link>
         <Link
@@ -78,7 +79,7 @@ let user = useAuthState(auth)
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-        >
+        ><FontAwesomeIcon icon="fa-solid fa-gear" />{' '}
           Settings
         </Link>
         <Link
@@ -86,13 +87,13 @@ let user = useAuthState(auth)
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
           }
-        >
+        ><FontAwesomeIcon icon="fa-solid fa-comment" />{' '}
           
-          Messages
+           Messages
         </Link>
         <div className="h-0 my-2 border border-solid border-blueGray-100" />
 
-        <div>{useUserWallet()}</div>
+        <div> {useUserWallet()}</div>
         
         
         
@@ -104,7 +105,7 @@ let user = useAuthState(auth)
           }
           onClick={(e) => handleLogout()}
 
-        >
+        ><FontAwesomeIcon icon="fas fa-sign-out-alt" />{' '}
           LogOut
         </Link>
         
