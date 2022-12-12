@@ -11,7 +11,7 @@ export default function Events() {
          overflow-hidden"
         >
           <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48relative rounded-xl z-30 p-5 text-white ">
-            <div className="">
+          <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">
               <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[85px] justfy-center object-center">
                 Events
               </h1>

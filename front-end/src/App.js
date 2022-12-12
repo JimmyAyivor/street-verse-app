@@ -30,6 +30,7 @@ import HowItWorks from "./pages/howItWorks";
 import Community from "./pages/community";
 import Faq from "./pages/faq";
 import Events from "./pages/events";
+import Membership from "./pages/membership";
 import TermsAndConditions from "./pages/terms";
 import Privacy from "./pages/privacy";
 import ContactUs from "./pages/contact";
@@ -57,6 +58,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/howitworks" element={<HowItWorks />} />
+            <Route path="/membership" element={<Membership />} />
             <Route path="/community" element={<Community />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/events" element={<Events />} />

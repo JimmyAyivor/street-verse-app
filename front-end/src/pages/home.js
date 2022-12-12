@@ -10,37 +10,33 @@ export default function Landing() {
           className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
         >
-          <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 relative z-30 p-5 text-white  rounded-xl">
-            <div className="relative">
-              <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[100px] justfy-center object-center">
-                StreetVerse
-              </h1>
-              <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-['Play'] text-yellow-200 font-medium text-center">
-                The world’s premier global NFT streetwear club. We are a
-                community built by fashion lovers, founded to celebrate the
-                authenticity and diversity of streetwear culture.
-              </p>
-            
-            </div>
+          <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">
+            <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[100px] justfy-center object-center">
+              StreetVerse
+            </h1>
+            <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-['Play'] text-yellow-200 font-medium text-center">
+              The world’s premier global NFT streetwear club. We are a
+              community built by fashion lovers, founded to celebrate the
+              authenticity and diversity of streetwear culture.
+            </p>
+
           </div>
-          <video
-            autoPlay
-            loop
-            muted
-            className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-          >
-            <source src="/img/StreetVerseRedLogo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
-            ></span>
-          </video>
-        </div>
+            <video
+              autoPlay
+              loop
+              muted
+              className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+            >
+              <source src="/img/StreetVerseRedLogo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+              <span
+                id="blackOverlay"
+                className="w-full h-full absolute opacity-75 bg-black"
+              ></span>
+            </video>
+          </div>
         <div className="container relative mx-auto">
-          <div className="items-center flex flex-wrap">
-            <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center"></div>
-          </div>
+          <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center"></div>
         </div>
         <div
           className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
@@ -409,7 +405,7 @@ export default function Landing() {
             </svg>
           </div>
 
-          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div className="container mx-auto px-4 lg:pt-24 lg:pb-32">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 pt-6 px-4">
                 <h2 className="text-4xl font-semibold font-['Play'] text-white">
