@@ -18,16 +18,16 @@ export default function Community() {
               </p>
             </div>
           </div>
-                        <div className="items-center flex flex-wrap">
+          <div className="items-center flex flex-wrap">
 
-          <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
-            <span
-              id="blackOverlay"
-              className="w-full h-full absolute opacity-75 bg-black"
-            ></span>
-            <source src="/img/MyMovie.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            <video autoPlay loop muted className="absolute z-10 w-auto min-w-full min-h-full max-w-none">
+              <span
+                id="blackOverlay"
+                className="w-full h-full absolute opacity-75 bg-black"
+              ></span>
+              <source src="/img/MyMovie.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         <div className="container relative mx-auto">
@@ -48,7 +48,7 @@ export default function Community() {
             x="0"
             y="0"
           >
-          
+
           </svg>
         </div>
         <section className="pt-[1px] pb-48">
@@ -58,7 +58,7 @@ export default function Community() {
                 <h2 className="text-5xl font-semibold font-['Play']">Our Community</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500 font-['Play']">
                   A Community Built By StreetWear Fashion Lovers
-                  <div></div>
+                  
                   Together, We Are Curious, Generous, Inclusive
                 </p>
               </div>

@@ -8,7 +8,7 @@ export default function Faq() {
           Frequently Asked Questions
         </h2>
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-          <p className="p-2 text-lg font-medium font-['Play'] tracking-wider text-center uppercase">
+          <p className="p-2 text-lg font-medium font-['Play'] tracking-wider text-left uppercase">
             General
           </p>
           <details>
@@ -144,9 +144,9 @@ export default function Faq() {
         </div>
       </div>
       <div className="h-[50px]"> </div>
-      <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+      <div className="container flex flex-col justify-left p-4 mx-auto md:p-8">
         <div className="flex flex-col font-['Play'] divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
-          <p className="p-2 text-lg font-medium tracking-wider text-center uppercase">
+          <p className="p-2 text-lg font-medium tracking-wider text-left uppercase">
             Membership
           </p>
           <details>
@@ -242,9 +242,9 @@ export default function Faq() {
         </div>
       </div>
       <div className="h-[50px]"> </div>
-      <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+      <div className="container flex flex-col justify-left p-4 mx-auto md:p-8">
         <div className="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700 font-['Play']">
-          <p className="p-2 text-lg font-medium tracking-wider text-center uppercase">
+          <p className="p-2 text-lg font-medium tracking-wider text-left uppercase">
             Acquisition of Events and Merch
           </p>
           <details>
