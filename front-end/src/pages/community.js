@@ -24,7 +24,7 @@ export default function Community() {
               <span id="blackOverlay" 
               className="w-full h-full absolute opacity-75 bg-blueGray-500">
               </span> 
-              <img src="/img/TheCommunity.gif" className="w-full h-full absolute"/>
+              <img src="/img/TheCommunity.gif" alt="fashion community" className="w-full h-full absolute"/>
               
           </div>
         </div>
