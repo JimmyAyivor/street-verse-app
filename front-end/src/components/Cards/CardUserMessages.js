@@ -63,7 +63,7 @@ export default function CardMessages({ color, title }) {
                       : "bg-blueGray-600 text-blueGray-200 border-blueGray-500")
                   }
                 >
-                  Sender's Name
+                  From
                 </th>
                 <th
                   className={

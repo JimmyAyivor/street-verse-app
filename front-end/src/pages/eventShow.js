@@ -29,8 +29,7 @@ export default function EventShow() {
 
   return (
     <>
-      <Navbar transparent />
-      <main className="eventsShow-page">
+      <main className="eventsShow-page mt-40" >
         <section className="relative block h-500-px">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
