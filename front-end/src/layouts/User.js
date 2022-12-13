@@ -26,7 +26,7 @@ export default function User({ children }) {
       setSubHeading("Messages from the Community");
     } else {
       setTitle("");
-      setSubHeading("hidden for sizing");
+      setSubHeading("");
     }
   }, [router])
 
