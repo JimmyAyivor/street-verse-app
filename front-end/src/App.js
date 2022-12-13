@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet} from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab, faDribbble, faFacebook, faGithub, faHtml5, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faArrowDown, faArrowUp, faAward, faBars, faBriefcase, faCalendar, faCalendarCheck, faCircle, faCircleNodes, faCirclePlus, faComment, faComments, faEllipsis, faEllipsisV, faEllipsisVertical, faFingerprint, faGear, faMapMarkerAlt, faNewspaper, faPhone, faRetweet, faS, faSearch, faSignOutAlt, faTable, faTimes, faTv, faUniversity, faUser, faUserFriends, faUserPlus, faUsers, faWallet } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +21,7 @@ import Users from "./pages/admin/users/users";
 import UserCommunity from "./pages/user/UserCommunity";
 import AdminEvents from "./pages/admin/events/events";
 import UserEvents from "./pages/user/UserEvents"
+import UserMessages from "./pages/user/UserMessages"
 
 import Login from "./pages/auth/login"
 import Register from "./pages/auth/register"
@@ -39,13 +40,13 @@ import Reset from "./pages/auth/reset"
 import EventShow from "./pages/eventShow";
 import PrivateOutlet from "./privateRoute";
 
-library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity, faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical, faEllipsisV, faUsers, faComments, faUserPlus, faSearch,faUser,faGear,faSignOutAlt, faComment, faArrowDown, faArrowUp, faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable,faWallet);
+library.add(fab, faS, faRetweet, faMapMarkerAlt, faUniversity, faBriefcase, faBars, faCalendar, faPhone, faCirclePlus, faCircleNodes, faFingerprint, faAward, faUserFriends, faHtml5, faTwitter, faFacebook, faDribbble, faGithub, faInstagram, faEllipsis, faEllipsisVertical, faEllipsisV, faUsers, faComments, faUserPlus, faSearch, faUser, faGear, faSignOutAlt, faComment, faArrowDown, faArrowUp, faCalendarCheck, faCircle, faTv, faNewspaper, faTimes, faTable, faWallet);
 
 
 
 
 function App() {
- 
+
 
 
 
@@ -84,7 +85,7 @@ function App() {
               <Route path="/user/settings" element={<Settings />} />
               <Route path="/user/community" element={<UserCommunity />} />
               <Route path="/user/events" element={<UserEvents />} />
-              <Route path="/user/messages" element={<Messages />} />
+              <Route path="/user/messages" element={<UserMessages />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/event/:id" element={<EventShow />} />
               <Route path="/profile/:id" element={<Profile />} />
