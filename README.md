@@ -14,5 +14,5 @@
 # Achitecture
 [comment]: <> (Add wireframe of App achitecture here)
 
-# Screenshorts
+# Screenshots
 [comment]: <> (Add frontend screeshorts here)
