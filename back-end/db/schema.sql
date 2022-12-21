@@ -60,7 +60,9 @@ create table if not exists events (
   created_at timestamp not null default now(),
   updated_at timestamp not null default now()
 );
-DROP TABLE IF EXISTS meassges;
+
+
+DROP TABLE IF EXISTS messages;
 create table if not exists messages (
   id          serial primary key,
   fullname    text not null,
