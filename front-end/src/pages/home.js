@@ -10,7 +10,7 @@ export default function Landing() {
           className="relative flex items-center justify-center h-screen mb-20
          overflow-hidden"
         >
-          <div className=" container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">
+          <div className="container text-center mx-auto flex flex-col items-center justify-center space-y-8 md:p-10 md:px-24 xl:px-48 z-30 p-5 bg-gray-900 bg-opacity-50 rounded-xl">
             <h1 className="font-bold leading-none text-center font-['Play'] text-yellow-500 text-[42px] sm:text-6xl md:text-7xl lg:text-[100px] justfy-center object-center">
               StreetVerse
             </h1>
@@ -78,6 +78,8 @@ export default function Landing() {
                   </div>
                 </div>
               </div>
+
+              
               <div className="pt-6 w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">

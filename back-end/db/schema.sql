@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS street_verse_db;
-CREATE DATABASE street_verse_db;
+DROP DATABASE IF EXISTS streetverse_db;
+CREATE DATABASE streetverse_db;
 
-\c street_verse_db;
+\c streetverse_db;
 
 create or replace function set_updated_at() RETURNS trigger
   LANGUAGE plpgsql
@@ -43,8 +43,6 @@ create table if not exists users (
 
 
 create trigger updated_at before update on users for each row execute procedure set_updated_at();
-
-
 
 
 DROP TABLE IF EXISTS events;

@@ -15,10 +15,6 @@ export default function Navbar(props) {
             </Link>
 
           </div>
-
-
-
-
         </div>
       </nav>
     </>

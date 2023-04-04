@@ -8,7 +8,7 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
+      <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between p-2 bg-white shadow">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
@@ -18,7 +18,7 @@ export default function Navbar(props) {
               <img
                 alt="..."
                 src="/img/StreetVerselogo.png"
-                className="border-none mx-auto max-w-180-px"
+                className="border-none mx-auto max-w-180-px h-16"
               />
             </Link>
             <button
@@ -34,15 +34,13 @@ export default function Navbar(props) {
               "lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none" +
               (navbarOpen ? " block" : " hidden")
             }
-            id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  to="events"
-                  target="_self"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
+                  to="/events"
                 >
                   Events
                 </Link>
@@ -50,9 +48,8 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
                   to="/community"
-                  target="_self"
                 >
                   Community
                 </Link>
@@ -60,9 +57,8 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
                   to="/membership"
-                  target="_self"
                 >
                   Membership
                 </Link>
@@ -70,9 +66,8 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
                   to="faq"
-                  target="_self"
                 >
                   Faq
                 </Link>
@@ -80,9 +75,8 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
                   to="/about"
-                  target="_self"
                 >
                   About
                 </Link>{" "}
@@ -93,9 +87,8 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 
                 {  <Link
-                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                  className="hover:text-blueGray-500 font-['Play'] text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
                   to="auth/login"
-                  target="_self"
                 >
                   Sign in
                 </Link>}
