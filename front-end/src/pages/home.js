@@ -17,7 +17,7 @@ export default function Landing() {
             <p className="mt-4 md:text-2xl pt-2 pb-8 leading-5 font-['Play'] text-yellow-200 font-medium text-center">
               The world’s premier global NFT streetwear club. We are a
               community built by fashion lovers, founded to celebrate the
-              authenticity and diversity of streetwear culture.
+              authenticity and diversity of streetwear culture. Make changes
             </p>
 
           </div>
